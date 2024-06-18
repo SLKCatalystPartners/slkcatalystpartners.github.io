@@ -8,7 +8,9 @@ intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
-# SLK Catalyst Partners provides 360 Consulting and Mentoring Services with Empathy for Corporate and Operational business leadership.
+# SLK Catalyst Partners
+
+We provide 360&deg; Consulting and Mentoring Services with Empathy for Corporate and Operational business leadership.
 
 Our offerings are driven by tested framework of established competencies in the areas of:
 - Innovation and Growth Strategy
