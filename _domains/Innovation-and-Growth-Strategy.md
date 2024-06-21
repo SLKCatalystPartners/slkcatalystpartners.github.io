@@ -1,5 +1,6 @@
 ---
 title: "Innovation and Growth Strategy"
+layout: domain
 weight: 1
 ---
 

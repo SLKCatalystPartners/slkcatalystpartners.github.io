@@ -1,5 +1,6 @@
 ---
 title: "Overall Business Strategy"
+layout: domain
 weight: 5
 ---
 

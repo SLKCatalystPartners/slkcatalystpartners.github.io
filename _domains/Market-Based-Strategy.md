@@ -1,5 +1,6 @@
 ---
 title: "Market-Based Strategy"
+layout: domain
 weight: 4
 ---
 

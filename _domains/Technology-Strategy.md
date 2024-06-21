@@ -1,5 +1,6 @@
 ---
 title: "Technology Strategy"
+layout: domain
 weight: 3
 ---
 

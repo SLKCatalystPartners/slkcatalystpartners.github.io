@@ -1,5 +1,6 @@
 ---
 title: "Efficiency Enhancement"
+layout: domain
 weight: 2
 ---
 
