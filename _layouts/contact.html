@@ -12,15 +12,23 @@ bodyClass: "page-contact"
                 <div class="content mt-4">{{content}}</div>
                 <div id="contact-form">
                     <form method="POST" action="https://formspree.io/mnqbqrpg">
+                        <div class="form-group">
                         <label for="Name">Name</label>
-                        <input name="Name" placeholder="What's your name?" type="name">
+                        <input class="form-control" name="Name" placeholder="What's your name?" type="name">
+                        </div>
+                        <div class="form-group">
                         <label for="Email">Email</label>
-                        <input name="Email" placeholder="What's your email address?" type="email">
+                        <input class="form-control" name="Email" placeholder="What's your email address?" type="email">
+                        </div>
+                        <div class="form-group">
                         <label for="phone">Phone</label>
-                        <input name="Phone" placeholder="What's your phone number?" type="tel">
+                        <input class="form-control" name="Phone" placeholder="What's your phone number?" type="tel">
+                        </div>
+                        <div class="form-group">
                         <label for="message">Details</label>
                         <textarea rows="6" name="message" placeholder="What can SLKone do for you?"></textarea>
-                        <button type="submit">Send</button>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
                     </form>
                 </div>
             </div>
