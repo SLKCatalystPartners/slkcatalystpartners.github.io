@@ -6,8 +6,6 @@ weight: 4
 
 Deep market understanding, effective customer targeting, optimizing salesforce performance, and competitive strategy.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
-
 # Strategic Market Leadership
 
 - Deeply understand market dynamics, customer needs, and competitive landscape.
