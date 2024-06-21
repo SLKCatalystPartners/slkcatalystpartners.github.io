@@ -1,5 +1,5 @@
 ---
-title: Jekyll Serif Theme
+title: SLK Catalyst Partners
 layout: home
 description: SLK Catalyst Partners provides Consulting and Mentoring Services with Empathy for Corporate and Operational business leadership.
 intro_image: "images/illustrations/homepage.svg"
