@@ -24,9 +24,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "services"
+      type: "domains"
     values:
-      layout: "service"
+      layout: "domains"
   - scope:
       path: ""
       type: "team"

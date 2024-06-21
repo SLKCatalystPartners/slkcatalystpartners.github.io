@@ -1,6 +1,6 @@
 ---
 title: Domains of Expertise
-layout: services
+layout: domains
 description: Domains
 intro_image: "images/illustrations/reading.svg"
 intro_image_absolute: true
