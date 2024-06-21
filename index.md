@@ -13,8 +13,8 @@ show_call_box: false
 SLK Catalyst Partners provide 360&deg; Consulting and Mentoring Services with Empathy for Corporate and Operational business leadership.
 
 Our offerings are driven by tested framework of established competencies in the areas of:
-- Innovation and Growth Strategy
-- Efficiency Enhancement
-- Technology Strategy
-- Market-based Strategy
-- Overall Business Strategy
+	- Innovation and Growth Strategy
+	- Efficiency Enhancement
+	- Technology Strategy
+	- Market-based Strategy
+	- Overall Business Strategy
