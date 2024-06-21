@@ -13,20 +13,20 @@ bodyClass: "page-basic"
         </div>
     </div>
 </div>
-
-<div class="container pt-6 pb-6">
-  <div class="row">
-    {% for domain in site.domain %}
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{ service.url | relative_url }}">{{ domain.title }}</a>
-          </h2>
-          <p>{{ domain.excerpt | markdownify | strip_html | truncate: 200 }}</p>
+<div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      {% assign limit = site.home.limit_domains | default: 6 %}
+      {% for domain in site.domains limit: limit %}
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              <a href="{{ domain.url | relative_url }}">{{ domain.title }}</a>
+            </h2>
+            <p>{{ domain.excerpt | markdownify | strip_html | truncate: 200 }}</p>
+          </div>
         </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
 </div>
