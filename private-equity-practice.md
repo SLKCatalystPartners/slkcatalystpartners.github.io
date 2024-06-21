@@ -1,7 +1,7 @@
 ---
 title: Private Equity Practice
 layout: page
-description: About
+description: SLK Catalyst Partners offers expert consulting for Private Equity firms and portfolio companies. Our 32 specialized toolkits drive innovation, efficiency, and growth. Maximize your PE investments with our strategic solutions.
 bodyClass: page-about
 ---
 
