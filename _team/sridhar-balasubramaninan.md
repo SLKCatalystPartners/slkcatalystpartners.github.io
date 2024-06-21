@@ -1,13 +1,11 @@
 ---
 title: "Sridhar Balasubramanian"
-image: "images/team/nonsap-visuals-kMJp7620W6U-unsplash.jpg"
+image: "images/team/sridhar-balsubramanian.jpg"
 jobtitle: "Experienced researcher, educator, consultant, keynote speaker, and academic leader"
 linkedinurl: "https://www.linkedin.com/in/sridhar-balasubramanian-6293162/"
 weight: 1
 promoted: true
 ---
-
-## Professional Overview
 
 Sridhar Balasubramanian ("Dr. B") is a distinguished scholar, educator, and business consultant with extensive experience in marketing strategy, technology strategy, and innovation management.
 

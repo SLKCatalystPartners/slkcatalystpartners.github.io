@@ -1,6 +1,6 @@
 ---
 title: "Arun Shukla"
-image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
+image: "images/team/arun-shukla.jpg"
 jobtitle: "Business Leader - Advisor - Investor - Mentor"
 linkedinurl: "https://www.linkedin.com/in/shuklaarun/"
 weight: 2
