@@ -34,7 +34,6 @@ bodyClass: "page-home"
               <a href="{{ domain.url | relative_url }}">{{ domain.title }}</a>
             </h2>
             <p>{{ domain.excerpt | markdownify | strip_html | truncate: 200 }}</p>
-            <a href="{{ domain.url | relative_url }}">Read More</a>
           </div>
         </div>
       </div>
@@ -56,7 +55,8 @@ bodyClass: "page-home"
           <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
           {% endif %}
           <h2 class="feature-title"><a href="{{feature.link}}">{{ feature.title }}</a></h2>
-          <div class="feature-content">{{ feature.description }}</div>
+          <div class="feature-content">{{ feature.description }}</div
+          <a href="{{ feature.link }}">Read More</a>>
         </div>
       </div>
       {% endfor %}
