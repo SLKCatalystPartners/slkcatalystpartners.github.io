@@ -1,6 +1,6 @@
 [
   {
-    "title": "Innovation & Growth Strategy",
+    "title": "Corporate Clients",
     "description": "Generating innovative ideas, enhancing customer experiences, expanding services, building sustainable models, and managing disruptive innovations.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
@@ -9,39 +9,12 @@
     }
   },
   {
-    "title": "Efficiency Management",
+    "title": "Private Equity",
     "description": "Optimizing resource use, improving processes, stopping unproductive activities, and introducing new, effective strategies.",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
       "width": 80,
       "height": 80
     }
-  },
-  {
-    "title": "Technology Strategy",
-    "description": "Incorporating technology into all business aspects, enhancing digital strategies, and driving technology adoption.",
-    "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
-      "width": 80,
-      "height": 80
-    }
-  },
-  {
-    "title": "Market-Based Strategy",
-    "description": "Deep market understanding, effective customer targeting, optimizing salesforce performance, and competitive strategy.",
-    "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
-      "width": 80,
-      "height": 80
-    }
-  },
-  {
-    "title": "Overall Business Strategy",
-    "description": "Defining organizational vision, managing communications, aligning metrics with strategy, navigating global markets, and managing risks and changes.",
-    "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
-      "width": 80,
-      "height": 80
-    }
-  }  
+  }
 ]
