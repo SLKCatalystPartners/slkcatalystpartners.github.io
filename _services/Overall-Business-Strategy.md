@@ -1,12 +1,13 @@
 ---
-title: "Mergers"
-date: 2019-02-28T15:15:34+10:00
-weight: 3
+title: "Overall Business Strategy"
+date: 2019-06-18T12:33:46+10:00
+weight: 4
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Lorem markdownum **Achaica revolutaque amore**, penitus puppes nec furit,
+clipeus fatetur, mira inter accedere. Dedit dum raptoresque Oete dolorem
+Cretaeas enim [ipse pectora excusat](#in-poscat) candentibus fertur? Furtiva
+Orontes Erysicthona dona, est per Achille viridi draconis cultis mota milia.
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 
