@@ -12,21 +12,22 @@ logo:
   desktop_width: "260px"
 
 home: 
-  limit_services: 6
+  limit_domains: 6
 
 collections:
-  services:
+  domains:
     output: true
     sort_by: weight
   team:
     output: true
+    sort_by: weight
 
 defaults:
   - scope:
       path: ""
-      type: "domains"
+      type: "domain"
     values:
-      layout: "domains"
+      layout: "domain"
   - scope:
       path: ""
       type: "team"
