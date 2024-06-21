@@ -23,8 +23,8 @@ bodyClass: "page-home"
 
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
-    <h2>Domains of Expertise</h2>
     <div class="row justify-content-start">
+      <h1>Domains of Expertise</h1>
       {% assign limit = site.home.limit_domains | default: 6 %}
       {% for domain in site.domains limit: limit %}
       <div class="col-12 col-md-4 mb-1">
