@@ -2,7 +2,7 @@ main:
   - name: "Domains of Expertise"
     url: "/services/"
     weight: 2
-  - name: "Private Equity"
+  - name: "Private Equity Practice"
     url: "/team/"
     weight: 3
   - name: "Corporate Practice"
