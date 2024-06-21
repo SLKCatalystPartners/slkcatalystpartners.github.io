@@ -1,6 +1,5 @@
 ---
-title: "Mike Vance"
-date: 2018-12-20T13:44:30+10:00
+title: "Arun Shukla"
 image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
 jobtitle: "Business Leader - Advisor - Investor - Mentor"
 linkedinurl: "https://www.linkedin.com/in/shuklaarun/"
@@ -8,14 +7,28 @@ weight: 2
 promoted: true
 ---
 
-## Role at SLK Catalyst Partners
+Arun Shukla is a distinguished business leader, advisor, and consultant with extensive experience in strategy operationalization, business transformation, and performance improvement.
 
-Arun Shukla is a Founding Partner of SLK Catalyst Partners, bringing over 30 years of experience in industry and consulting to drive transformative solutions for our clients.
+## Current Positions
+- Founding Partner & CEO, SLKone
+- Managing Director, Amalgam Capital
+- Board Member, Go Global NC
+- Board Member, MechanAir
+- Board Member, EMSAR - Equipment Management Service and Repair
+
+## Education
+- Master in Management, Joint program from Sasin (Chula) - Kellogg (NWU) - Wharton (UPenn)
+- B.Tech in Civil Engineering, Indian Institute of Technology (Banaras Hindu University), Varanasi
+- Executive Education in Factory Physics, Northwestern University - Kellogg School of Management
+
+## Professional Experience
+- Managing Director, Berkeley Research Group LLC
+- Senior Managing Director, FTI Consulting
+- Practice Leader, Kepner-Tregoe Inc.
+- Industry Director, SAP
+- Business Analysis Manager, BHP
 
 ## Areas of Expertise
-
-At SLK Catalyst Partners, Arun specializes in:
-
 - Strategy Operationalization
 - Business Transformation
 - Performance Improvement
@@ -23,40 +36,21 @@ At SLK Catalyst Partners, Arun specializes in:
 - Lean and Continuous Improvement
 - Organizational Design and Change Management
 
-## Approach to Client Solutions
-
-Arun helps clients navigate through uncertainty by:
-
-1. Bridging the gap between Strategy, Leadership, and Knowledge
-2. Designing and executing bespoke solutions
-3. Focusing on outcome-based value realization
-
-## Key Offerings for SLK Catalyst Partners' Clients
-
-- Corporate Clients: Aligning strategy, leadership, and knowledge for sustainable growth
-- Private Equity Clients: Realizing investment theses through the 'Stabilize - Leap - Keep climbing' cycle
-- Operationalizing strategies for tangible results
-- Driving business transformation through innovative approaches
-- Implementing performance improvement initiatives
-
-## Professional Background
-
-Arun's experience includes leadership roles at:
-
-- Berkeley Research Group LLC
-- FTI Consulting
-- Kepner-Tregoe Inc.
-- SAP
-- BHP
-
-## Education
-
-- Master in Management, Sasin-Kellogg-Wharton joint program
-- B.Tech in Civil Engineering, IIT Varanasi
-- Executive Education, Northwestern University - Kellogg School of Management
+## Corporate Engagement
+Arun has led and partnered with teams globally in operations excellence projects, resulting in breakthrough successes for clients across various industries, including:
+- Private Equity portfolio companies
+- Fortune 500 corporations
+- Mid-market businesses
+- International organizations
 
 ## Thought Leadership
+- Published numerous articles on Lean, Cost Management, and Innovation
+- Frequent speaker at industry forums and global events
+- Recognized for driving business transformation through operationalizing strategy
 
-Arun has published numerous articles on Lean, Cost Management, and Innovation, and is a frequent speaker at industry forums and global events.
+## Approach to Client Solutions
+- Bridges the gap between Strategy, Leadership, and Knowledge in organizations
+- Realizes investment theses for PE portfolio companies through 'Stabilize - Leap - Keep climbing' cycle
+- Designs, operationalizes, and executes bespoke solutions for clients
 
-With his extensive experience and innovative approach, Arun Shukla is committed to delivering exceptional value to SLK Catalyst Partners' clients, driving their success in today's complex business landscape.
+Arun Shukla brings a wealth of practical experience and strategic insight to SLK Catalyst Partners, offering clients innovative solutions for complex business challenges in today's dynamic market environment.
