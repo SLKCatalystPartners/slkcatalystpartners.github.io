@@ -5,6 +5,7 @@ image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
 jobtitle: "Business Leader - Advisor - Investor - Mentor"
 linkedinurl: "https://www.linkedin.com/in/shuklaarun/"
 weight: 2
+promoted: true
 ---
 
 ## Role at SLK Catalyst Partners

@@ -2,8 +2,9 @@
 title: "Sridhar Balasubramanian"
 image: "images/team/nonsap-visuals-kMJp7620W6U-unsplash.jpg"
 jobtitle: "Experienced researcher, educator, consultant, keynote speaker, and academic leader"
-linkedinurl: ""
+linkedinurl: "https://www.linkedin.com/in/sridhar-balasubramanian-6293162/"
 weight: 1
+promoted: true
 ---
 
 ## Professional Overview
