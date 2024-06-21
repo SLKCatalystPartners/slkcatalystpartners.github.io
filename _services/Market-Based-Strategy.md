@@ -1,23 +1,19 @@
 ---
-title: "Wealth Management"
-date: 2019-06-18T12:33:46+10:00
-weight: 8
+title: "Market-Based Strategy"
+weight: 4
 ---
 
-Lorem markdownum **Achaica revolutaque amore**, penitus puppes nec furit,
-clipeus fatetur, mira inter accedere. Dedit dum raptoresque Oete dolorem
-Cretaeas enim [ipse pectora excusat](#in-poscat) candentibus fertur? Furtiva
-Orontes Erysicthona dona, est per Achille viridi draconis cultis mota milia.
+Deep market understanding, effective customer targeting, optimizing salesforce performance, and competitive strategy.
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 
-# Objectives
+# Strategic Market Leadership
 
-Financial accounting and financial reporting are often used as synonyms.
-
-1. According to International Financial Reporting Standards: the objective of financial reporting is:
-2. To provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the reporting entity.
-3. According to the European Accounting Association:
+- Deeply understand market dynamics, customer needs, and competitive landscape.
+- Develop effective segmentation, targeting, and positioning strategies.
+- Optimize salesforce performance with the right metrics and incentives.
+- Manage competition using strategic and tactical approaches.
+- Implement robust market research to inform strategic decisions.
 
 ## Relevance
 

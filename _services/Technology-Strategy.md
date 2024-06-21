@@ -1,23 +1,17 @@
 ---
-title: "Tax Preperation"
-date: 2019-04-18T12:33:46+10:00
-weight: 6
+title: "Technology Strategy"
+weight: 3
 ---
 
-Lorem markdownum **Achaica revolutaque amore**, penitus puppes nec furit,
-clipeus fatetur, mira inter accedere. Dedit dum raptoresque Oete dolorem
-Cretaeas enim [ipse pectora excusat](#in-poscat) candentibus fertur? Furtiva
-Orontes Erysicthona dona, est per Achille viridi draconis cultis mota milia.
+Incorporating technology into all business aspects, enhancing digital strategies, and driving technology adoption.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+# Harnessing Technology for Advantage
 
-# Objectives
-
-Financial accounting and financial reporting are often used as synonyms.
-
-1. According to International Financial Reporting Standards: the objective of financial reporting is:
-2. To provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the reporting entity.
-3. According to the European Accounting Association:
+- Integrate technology seamlessly into market strategies for competitive advantage.
+- Develop strong peripheral vision to identify opportunities and threats.
+- Drive technology adoption and overcome barriers to innovation.
+- Reimagine products and services to leverage digital advancements.
+- Craft comprehensive digital marketing strategies aligned with overall goals.
 
 ## Relevance
 

@@ -1,23 +1,17 @@
 ---
 title: "Overall Business Strategy"
-date: 2019-06-18T12:33:46+10:00
-weight: 4
+weight: 5
 ---
 
-Lorem markdownum **Achaica revolutaque amore**, penitus puppes nec furit,
-clipeus fatetur, mira inter accedere. Dedit dum raptoresque Oete dolorem
-Cretaeas enim [ipse pectora excusat](#in-poscat) candentibus fertur? Furtiva
-Orontes Erysicthona dona, est per Achille viridi draconis cultis mota milia.
+Defining organizational vision, managing communications, aligning metrics with strategy, navigating global markets, and managing risks and changes.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+# Comprehensive Strategic Vision
 
-# Objectives
-
-Financial accounting and financial reporting are often used as synonyms.
-
-1. According to International Financial Reporting Standards: the objective of financial reporting is:
-2. To provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the reporting entity.
-3. According to the European Accounting Association:
+- Define and communicate a clear organizational vision and mission.
+- Optimize corporate communications across all stakeholder interfaces.
+- Align business metrics with strategic goals and performance indicators.
+- Navigate global and developing markets with customized strategies.
+- Mitigate risks and manage change effectively within the organization.
 
 ## Relevance
 
