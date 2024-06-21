@@ -71,5 +71,3 @@ Our approach emphasizes "deep knowledge applied with empathy" to ensure strategi
 - Emphasis on building long-term capabilities within portfolio companies
 
 Partner with SLK Catalyst Partners to maximize the value of your PE investments and drive sustainable growth in your portfolio companies.
-
-# Domains of Expertise
