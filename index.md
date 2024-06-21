@@ -1,14 +1,14 @@
 ---
 title: Jekyll Serif Theme
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+description: SLK Catalyst Partners provides Consulting and Mentoring Services with Empathy for Corporate and Operational business leadership.
 intro_image: "images/illustrations/homepage.svg"
-intro_image_absolute: false
-intro_image_hide_on_mobile: true
-show_call_box: true
+intro_image_absolute: true
+intro_image_hide_on_mobile: false
+show_call_box: false
 ---
 
-# Expert Coaching + Mentoring = Transformative Leadership
+# Level-Up Your Team's Strategic Skills
 
 SLK Catalyst Partners provide 360&deg; Consulting and Mentoring Services with Empathy for Corporate and Operational business leadership.
 
