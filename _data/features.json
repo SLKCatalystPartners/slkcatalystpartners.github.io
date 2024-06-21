@@ -1,7 +1,7 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "Innovation & Growth Strategy",
+    "description": "Generating innovative ideas, enhancing customer experiences, expanding services, building sustainable models, and managing disruptive innovations.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
       "width": 80,
@@ -9,8 +9,8 @@
     }
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Efficiency Management",
+    "description": "Optimizing resource use, improving processes, stopping unproductive activities, and introducing new, effective strategies.",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
       "width": 80,
@@ -18,12 +18,30 @@
     }
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Technology Strategy",
+    "description": "Incorporating technology into all business aspects, enhancing digital strategies, and driving technology adoption.",
     "image": {
       "url": "images/features/noun_3d modeling_1885342.svg",
       "width": 80,
       "height": 80
     }
-  }
+  },
+  {
+    "title": "Market-Based Strategy",
+    "description": "Deep market understanding, effective customer targeting, optimizing salesforce performance, and competitive strategy.",
+    "image": {
+      "url": "images/features/noun_3d modeling_1885342.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Overall Business Strategy",
+    "description": "Defining organizational vision, managing communications, aligning metrics with strategy, navigating global markets, and managing risks and changes.",
+    "image": {
+      "url": "images/features/noun_3d modeling_1885342.svg",
+      "width": 80,
+      "height": 80
+    }
+  }  
 ]
