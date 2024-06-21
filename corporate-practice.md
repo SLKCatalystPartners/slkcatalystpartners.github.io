@@ -1,8 +1,8 @@
 ---
 title: Corporate Practice
-layout: page
+layout: practice
 description: SLK Catalyst Partners offers 360° consulting for corporate leaders. Our 32 toolkits drive innovation, efficiency, and growth. Transform your business with our expert strategic solutions.
-bodyClass: page-about
+bodyClass: page-practice
 ---
 
 ## Empowering Business Leaders in a Dynamic Landscape
