@@ -1,0 +1,42 @@
+---
+title: Contact
+layout: default
+bodyClass: "page-contact"
+---
+
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-8">
+            <div class="service service-single">
+                <h1 class="title">{{page.title}}</h1>
+                <div class="content mt-4">{{content}}</div>
+                <div id="contact-form">
+                    <form method="POST" action="https://formspree.io/mnqbqrpg">
+                        <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input class="form-control" name="Name" placeholder="What's your name?" type="name">
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input class="form-control" name="Email" placeholder="What's your email address?" type="email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input class="form-control" name="Phone" placeholder="What's your phone number?" type="tel">
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                        <label for="message">Details</label>
+                        <textarea class="form-control" rows="6" name="message" placeholder="How can we partern with you?"></textarea>
+                        </div>
+                        <br/>
+                        <button type="submit" class="button button-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

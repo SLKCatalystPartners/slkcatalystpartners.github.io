@@ -1,0 +1,31 @@
+---
+layout: default
+bodyClass: "page-basic"
+---
+
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-8">
+            <div class="service service-single">
+                <h1 class="title">{{page.title}}</h1>
+                <div class="content">{{content}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-start">
+      <h2>Domains of Expertise</h2>
+      {% assign limit = site.home.limit_domains | default: 6 %}
+      {% for domain in site.domains limit: limit %}
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              <a href="{{ domain.url | relative_url }}">{{ domain.title }}</a>
+            </h2>
+            <p>{{ domain.excerpt | markdownify | strip_html | truncate: 200 }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+</div>

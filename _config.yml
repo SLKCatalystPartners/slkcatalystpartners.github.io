@@ -1,0 +1,53 @@
+baseurl: '/'
+siteurl: 'https://slkonecatalystpartners.com'
+permalink: pretty
+title: 'SLK Catalyst Partners'
+
+logo:
+  mobile: "images/logo/logo-mobile.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "100px"
+  desktop_width: "260px"
+
+home: 
+  limit_domains: 6
+
+collections:
+  domains:
+    output: true
+    sort_by: weight
+  team:
+    output: true
+    sort_by: weight
+
+defaults:
+  - scope:
+      path: ""
+      type: "domain"
+    values:
+      layout: "domain"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+plugins:
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
