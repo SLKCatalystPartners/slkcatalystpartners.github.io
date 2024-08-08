@@ -1,53 +1,85 @@
-baseurl: '/'
-siteurl: 'https://slkonecatalystpartners.com'
-permalink: pretty
-title: 'SLK Catalyst Partners'
+# Site settings
+title: SLK Catalyst Partners
+email: contact@slkcatalystpartners.com
+description: >-
+  SLK Catalyst Partners empowers businesses by transforming complex challenges 
+  into strategic opportunities, blending proven frameworks with innovative solutions.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://slkcatalystpartners.com" # Update this to your actual domain
+permalink: "/:title"
 
-logo:
-  mobile: "images/logo/logo-mobile.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "100px"
-  desktop_width: "260px"
-
-home: 
-  limit_domains: 6
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-archives
+  - jekyll-seo-tag
 
 collections:
-  domains:
+  authors:
     output: true
-    sort_by: weight
-  team:
+  services:
     output: true
-    sort_by: weight
+    permalink: /services/:name
+  team_members:
+    output: true
+    permalink: /team/:name
+  case_studies:
+    output: true
+    permalink: /case-studies/:name
 
-defaults:
-  - scope:
-      path: ""
-      type: "domain"
-    values:
-      layout: "domain"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
+# Pagination settings
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 6
+  permalink: '/blog/page/:num/'
+  title: ':title - Page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
 
-sass:
-  style: compressed # possible values: nested expanded compact compressed
+# Tag and category pages
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
 
-plugins:
-  - jekyll-environment-variables
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - LICENSE.md
-  - LICENSE
-  - README.md
+# RSS Feed
+feed:
+  collections:
+    posts:
+      path: "/index.xml"
+
+# Navigation
+header_pages:
+  - private-equity.md
+  - approach.md
+  - case-studies.md
+  - about.md
+  - contact.md
+
+# Social media
+twitter_username: slkcatalyst
+linkedin_username: slk-catalyst-partners
+
+# Google Analytics
+google_analytics: # Add your GA tracking ID here
+
+# Footer content
+footer_content: "© 2024 SLK Catalyst Partners. All rights reserved."
