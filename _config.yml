@@ -2,6 +2,7 @@ baseurl: '/'
 siteurl: 'https://slkonecatalystpartners.com'
 permalink: pretty
 title: 'SLK Catalyst Partners'
+theme: jekyll-theme-serif
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
