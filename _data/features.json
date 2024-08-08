@@ -1,0 +1,22 @@
+[
+  {
+    "title": "What we can do for Corporate Clients",
+    "description": "Generating innovative ideas, enhancing customer experiences, expanding services, building sustainable models, and managing disruptive innovations.",
+    "link": "/corporate-practice",
+    "image": {
+      "url": "images/features/noun_branding_1885335.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "What we can do for Private Equity",
+    "description": "Optimizing resource use, improving processes, stopping unproductive activities, and introducing new, effective strategies.",
+    "link": "/private-equity-practice",
+    "image": {
+      "url": "images/features/noun_The Process_1885341.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]
