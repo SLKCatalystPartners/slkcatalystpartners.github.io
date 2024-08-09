@@ -89,8 +89,8 @@ header_class: white
           const startY = Math.random(size/-3, size/-2); // Start higher up
           circle.style.top = `${startY}%`;
 
-          const translateX = (Math.random() - 0.5) * divWidth *.1; // Increased horizontal movement
-          const translateY = Math.min(startY, Math.random(startY, size)); // Increased vertical movement
+          const translateX = (Math.random() - 0.5) * 80; // Increased horizontal movement
+          const translateY = Math.min(60 - startY, Math.random() * 60); // Increased vertical movement
           circle.style.setProperty('--translate-x', `${translateX}px`);
           circle.style.setProperty('--translate-y', `${translateY}px`);
 
