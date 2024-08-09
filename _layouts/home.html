@@ -67,9 +67,9 @@ bodyClass: "page-home"
 
   function createFloatingCircles() {
       const circleSize = 1000; // Increased base size of circles
-      const circleOverlap = 0.8; // More overlap
+      const circleOverlap = 0.1; // More overlap
       const divWidth = floatingBackground.offsetWidth;
-      const numberOfCircles = Math.ceil(divWidth / (circleSize * circleOverlap)) + 2; // Add extra circles for more coverage
+      const numberOfCircles = Math.ceil(divWidth / (circleSize * circleOverlap)) + 5; // Add extra circles for more coverage
 
       for (let i = 0; i < numberOfCircles; i++) {
           const circle = document.createElement('div');
