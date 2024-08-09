@@ -13,6 +13,9 @@
 		height: calc(100vh - 80px);
 		overflow: hidden;
 		color: #fff;
+		display: flex;
+		align-items: center;
+		min-height: 550px;
 		h1, p {
 			color: #fff;
 		}
