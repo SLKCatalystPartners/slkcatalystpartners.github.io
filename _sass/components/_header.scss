@@ -6,6 +6,8 @@
   align-items: center;
   padding: 10px 0px;
   z-index: 999;
+  border-bottom: 0px;
+  position: relative;
   .container {
     display: flex;
     justify-content: space-between;
