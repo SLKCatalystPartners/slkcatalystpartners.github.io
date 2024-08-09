@@ -72,7 +72,7 @@ header_class: white
       const divWidth = floatingBackground.offsetWidth;
       const circleSize = divHeight / 2; // Increased base size of circles
       const circleOverlap = 0.3; // More overlap
-      const numberOfCircles = 8; // Add extra circles for more coverage
+      const numberOfCircles = 10; // Add extra circles for more coverage
 
       for (let i = 0; i < numberOfCircles; i++) {
           const circle = document.createElement('div');
@@ -83,10 +83,10 @@ header_class: white
           const color = colorsCircles[Math.floor(Math.random() * colorsCircles.length)];
           circle.style.backgroundColor = color;
           
-          const startX = i * circleSize * circleOverlap - size / 2;
+          const startX = Math.random(circleSize/-2,divWidth - (circleSize/2));
           circle.style.left = `${startX}px`;
           
-          const startY = Math.random() * - 50; // Start higher up
+          const startY = Math.random() * circleSize/-3; // Start higher up
           circle.style.top = `${startY}%`;
 
           const translateX = (Math.random() - 0.5) * divWidth *.1; // Increased horizontal movement
