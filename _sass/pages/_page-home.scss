@@ -34,7 +34,6 @@
 .floating-circle {
 	position: absolute;
 	border-radius: 50%;
-	opacity: 0.1;
 	filter: blur(60px);
 	animation: float 5s infinite ease-in-out;
 }
