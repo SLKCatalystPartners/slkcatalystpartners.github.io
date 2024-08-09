@@ -1,17 +1,15 @@
 ---
 title: SLK Catalyst Partners
 layout: home
-description: SLK Catalyst Partners provides Consulting and Mentoring Services with Empathy for Corporate and Operational business leadership.
+description: Strategic Conundrum? We've got the frameworks to navigate through.
 intro_image: "images/illustrations/homepage.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 show_call_box: false
 ---
 
-# Level-Up Your Team
+# Strategic Conundrum? We've got the frameworks to navigate through.
 
-At SLK Catalyst Partners, we offer 360&deg; consulting and mentoring services with empathy, tailored for corporate and operational business leadership.
+With outcomes aligned, SLK Catalyst Partners brings proven frameworks to empower both private equity sponsors, their portfolio companies, and standalone
 
-Our comprehensive approach addresses the multifaceted challenges of today's dynamic business environment. We help leaders drive innovation, enhance efficiency, and develop strategic growth plans.
-
-Let us partner with you to transform potential obstacles into opportunities and achieve lasting success.
+Our principals and team have partnered with companies across a diverse range of industries, including heavy equipment (e.g., Caterpillar), transportation (e.g., Boeing), retail (e.g., Lowe’s), and energy (e.g., Baker Hughes). We empower clients to innovate by driving demand and customer satisfaction, creating exceptional customer and employee experiences, and enhancing processes. Our focus is on optimizing key business levers to ensure sustainable, long-term profitability and growth. Whether on the operational or market side, we deliver strategies that align with your business objectives.
