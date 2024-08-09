@@ -7,18 +7,18 @@
 	        color: rgb(104, 104, 104);
 		}
 	}
-}
-
-.hero {
-	position: relative;
-	width: 100%;
-	height: calc(100vh - 80px);
-	overflow: hidden;
-	color: #fff;
-	h1, p {
+	.hero {
+		position: relative;
+		width: 100%;
+		height: calc(100vh - 80px);
+		overflow: hidden;
 		color: #fff;
+		h1, p {
+			color: #fff;
+		}
 	}
 }
+
 
 .floating-background {
 	background-color:#130950;
