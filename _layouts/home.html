@@ -63,7 +63,8 @@ bodyClass: "page-home"
 
 <script>
   const floatingBackground = document.getElementById('floatingBackground');
-  const colors = ['#00A850', '#FFC72C', '#E6F3ED', '#F9F3E1'];
+  const colorsCircles = ['#FFC72C', '#E6F3ED', '#F9F3E1'];
+  const colorsDots = ['#00A850', '#FFC72C', '#E6F3ED', '#F9F3E1'];
 
   function createFloatingCircles() {
       const divHeight = floatingBackground.offsetHeight;
@@ -78,7 +79,7 @@ bodyClass: "page-home"
           const size = Math.random() * 500 + circleSize; // Larger size range
           circle.style.width = `${size}px`;
           circle.style.height = `${size}px`;
-          const color = colors[Math.floor(Math.random() * colors.length)];
+          const color = colorsCircles[Math.floor(Math.random() * colorsCircles.length)];
           circle.style.backgroundColor = color;
           
           const startX = i * circleSize * circleOverlap - size / 2;
@@ -110,8 +111,8 @@ bodyClass: "page-home"
   const ctx = canvas.getContext('2d');
 
   let width, height;
-  const dotCount = 100;
-  const connectionDistance = 100;
+  const dotCount = 50;
+  const connectionDistance = 50;
   let dots = [];
   let time = 0;
 
@@ -124,7 +125,7 @@ bodyClass: "page-home"
           this.vx = (Math.random() - 0.5) * 0.65;
           this.vy = (Math.random() - 0.5) * 0.65;
           this.radius = Math.random() * 2 + 1;
-          this.color = colors[Math.floor(Math.random() * colors.length)];
+          this.color = colorsDots[Math.floor(Math.random() * colors.length)];
           this.phaseX = Math.random() * Math.PI * 2;
           this.phaseY = Math.random() * Math.PI * 2;
       }
