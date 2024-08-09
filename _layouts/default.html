@@ -32,7 +32,7 @@
   <canvas id="backgroundCanvas"></canvas>
   {% include main-menu-mobile.html %}
   <div id="wrapper" class="wrapper">
-    {% include header.html headerClass='header-extra' %}
+    {% include header.html headerClass='header-extra {% if page.header_class %}{page.header_class}{endif}' %}
     {{content}}
   </div>
   {% include footer.html %}

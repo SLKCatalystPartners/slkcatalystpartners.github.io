@@ -17,11 +17,12 @@
 }
 
 .floating-background {
+	background-color:#006548;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 61vh;
 	z-index: 0;
 	overflow: hidden;
 	z-index: 0.1;

@@ -1,6 +1,7 @@
 ---
 layout: default
 bodyClass: "page-home"
+header_class: white
 ---
 
 <div class="intro hero">
@@ -63,7 +64,7 @@ bodyClass: "page-home"
 
 <script>
   const floatingBackground = document.getElementById('floatingBackground');
-  const colorsCircles = ['#FFC72C', '#E6F3ED', '#F9F3E1'];
+  const colorsCircles = ['#FFC72C', '#24228c', '#130950'];
   const colorsDots = ['#00A850', '#FFC72C', '#E6F3ED', '#F9F3E1'];
 
   function createFloatingCircles() {
@@ -85,11 +86,11 @@ bodyClass: "page-home"
           const startX = i * circleSize * circleOverlap - size / 2;
           circle.style.left = `${startX}px`;
           
-          const startY = Math.random() * -30 - 20; // Start higher up
+          const startY = Math.random() + ( circleSize * -0.5); // Start higher up
           circle.style.top = `${startY}%`;
 
-          const translateX = (Math.random() - 0.5) * 80; // Increased horizontal movement
-          const translateY = Math.min(60 - startY, Math.random() * divHeight / 2); // Increased vertical movement
+          const translateX = (Math.random() - 0.5) * divWidth * 0.1; // Increased horizontal movement
+          const translateY = Math.min(startY, Math.random() * divHeight / 2); // Increased vertical movement
           circle.style.setProperty('--translate-x', `${translateX}px`);
           circle.style.setProperty('--translate-y', `${translateY}px`);
 
