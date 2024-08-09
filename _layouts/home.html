@@ -83,14 +83,14 @@ header_class: white
           const color = colorsCircles[Math.floor(Math.random() * colorsCircles.length)];
           circle.style.backgroundColor = color;
           
-          const startX = Math.random(circleSize/-2,divWidth - (circleSize/2));
+          const startX = Math.random((size/-2),divWidth+(size/2));
           circle.style.left = `${startX}px`;
           
-          const startY = Math.random() * circleSize/-3; // Start higher up
+          const startY = Math.random(size/-3, size/-2); // Start higher up
           circle.style.top = `${startY}%`;
 
           const translateX = (Math.random() - 0.5) * divWidth *.1; // Increased horizontal movement
-          const translateY = Math.min(startY, Math.random() * divHeight / 2); // Increased vertical movement
+          const translateY = Math.min(startY, Math.random(startY, size)); // Increased vertical movement
           circle.style.setProperty('--translate-x', `${translateX}px`);
           circle.style.setProperty('--translate-y', `${translateY}px`);
 
