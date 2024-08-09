@@ -66,38 +66,37 @@ header_class: white
   const colorsDots = ['#00A850', '#FFC72C', '#E6F3ED', '#F9F3E1'];
 
   function createFloatingCircles() {
-      const divHeight = floatingBackground.offsetHeight;
-      const divWidth = floatingBackground.offsetWidth;
-      const circleSize = divHeight / 2; // Increased base size of circles
-      const circleOverlap = 0.8; // More overlap
-      const numberOfCircles = 10; // Add extra circles for more coverage
+            const circleSize = 500; // Increased base size of circles
+            const circleOverlap = 0.5; // More overlap
+            const divWidth = floatingBackground.offsetWidth;
+            const numberOfCircles = Math.ceil(divWidth / (circleSize * circleOverlap)) + 2; // Add extra circles for more coverage
 
-      for (let i = 0; i < numberOfCircles; i++) {
-          const circle = document.createElement('div');
-          circle.classList.add('floating-circle');
-          const size = Math.random() * 500 + circleSize; // Larger size range
-          circle.style.width = `${size}px`;
-          circle.style.height = `${size}px`;
-          const color = colorsCircles[Math.floor(Math.random() * colorsCircles.length)];
-          circle.style.backgroundColor = color;
-          
-          const startX = Math.random((size/-2),divWidth+(size/2));
-          circle.style.left = `${startX}px`;
-          
-          const startY = Math.random(size/-3, size/-2); // Start higher up
-          circle.style.top = `${startY}%`;
+            for (let i = 0; i < numberOfCircles; i++) {
+                const circle = document.createElement('div');
+                circle.classList.add('floating-circle');
+                const size = Math.random() * 200 + circleSize; // Larger size range
+                circle.style.width = `${size}px`;
+                circle.style.height = `${size}px`;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                circle.style.backgroundColor = color;
+                
+                const startX = i * circleSize * circleOverlap - size / 2;
+                circle.style.left = `${startX}px`;
+                
+                const startY = Math.random() * -30 - 20; // Start higher up
+                circle.style.top = `${startY}%`;
 
-          const translateX = (Math.random() - 0.5) * 80; // Increased horizontal movement
-          const translateY = Math.min(60 - startY, Math.random() * 60); // Increased vertical movement
-          circle.style.setProperty('--translate-x', `${translateX}px`);
-          circle.style.setProperty('--translate-y', `${translateY}px`);
+                const translateX = (Math.random() - 0.5) * 80; // Increased horizontal movement
+                const translateY = Math.min(60 - startY, Math.random() * 60); // Increased vertical movement
+                circle.style.setProperty('--translate-x', `${translateX}px`);
+                circle.style.setProperty('--translate-y', `${translateY}px`);
 
-          circle.style.animationDuration = `${Math.random() * 2 + 2}s`; // Even faster animation
-          circle.style.animationDelay = `${Math.random() * -3}s`;
+                circle.style.animationDuration = `${Math.random() * 2 + 3}s`; // Even faster animation
+                circle.style.animationDelay = `${Math.random() * -3}s`;
 
-          floatingBackground.appendChild(circle);
-      }
-  }
+                floatingBackground.appendChild(circle);
+            }
+        }
 
   createFloatingCircles();
   window.addEventListener('resize', () => {
