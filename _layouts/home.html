@@ -62,14 +62,14 @@ header_class: white
 
 <script>
   const floatingBackground = document.getElementById('floatingBackground');
-  const colorsCircles = ['#FFC72C', '#24228c', '#006548'];
+  const colorsCircles = ['#3a2849', '#334f4e', '#235958', '#24228c', '#006548'];
   const colorsDots = ['#00A850', '#FFC72C', '#E6F3ED', '#F9F3E1'];
 
   function createFloatingCircles() {
             const circleSize = 500; // Increased base size of circles
             const circleOverlap = 0.5; // More overlap
             const divWidth = floatingBackground.offsetWidth;
-            const numberOfCircles = Math.ceil(divWidth / (circleSize * circleOverlap)) + 2; // Add extra circles for more coverage
+            const numberOfCircles = Math.ceil(divWidth / (circleSize * circleOverlap)); // Add extra circles for more coverage
 
             for (let i = 0; i < numberOfCircles; i++) {
                 const circle = document.createElement('div');
@@ -185,7 +185,7 @@ header_class: white
                   ctx.beginPath();
                   ctx.moveTo(dots[i].x, dots[i].y);
                   ctx.lineTo(dots[j].x, dots[j].y);
-                  ctx.strokeStyle = `rgba(0, 0, 0, ${0.1 * (1 - distance / connectionDistance)})`;
+                  ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - distance / connectionDistance)})`;
                   ctx.stroke();
               }
           }
