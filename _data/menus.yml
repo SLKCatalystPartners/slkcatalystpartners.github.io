@@ -1,12 +1,9 @@
 main:
-  - name: "Domains of Expertise"
-    url: "/domains-of-expertise/"
+  - name: "Approach"
+    url: "/approach/"
     weight: 2
   - name: "Private Equity Practice"
     url: "/private-equity-practice/"
-    weight: 3
-  - name: "Corporate Practice"
-    url: "/corporate-practice/"
     weight: 3    
   - name: "About"
     url: "/about/"
