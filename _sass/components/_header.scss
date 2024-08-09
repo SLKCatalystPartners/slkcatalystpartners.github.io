@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
   padding: 10px 0px;
+  z-index: 999;
   .container {
     display: flex;
     justify-content: space-between;
