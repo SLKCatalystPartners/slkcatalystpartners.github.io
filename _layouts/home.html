@@ -7,7 +7,12 @@ header_class: white
 <div class="intro hero">
   <div class="container">
     <div class="row justify-content-start">
-        {{ content }}
+      <h1 class="col-12 col-md-10 col-lg-12 order-1 order-md-1">{{ page.hero-heading}}</h1>
+      <div class="col-12 col-md-8 col-lg-6 order-2 order-md-2">
+      <p class="large">>{{ page.hero-text}}</p>
+      <a class="large" href="{{absolute_url }}/{{ page.hero-link }}">/{{ page.hero-link-text }}</a>
+      
+      
     </div>
   </div>
 </div>
@@ -64,37 +69,43 @@ header_class: white
   const colorsDots = ['#00A850', '#FFC72C', '#E6F3ED', '#F9F3E1'];
 
   function createFloatingCircles() {
-            const circleSize = 500; // Increased base size of circles
-            const circleOverlap = 0.5; // More overlap
-            const divWidth = floatingBackground.offsetWidth;
-            const numberOfCircles = Math.ceil(divWidth / (circleSize * circleOverlap)); // Add extra circles for more coverage
+    const circleSize = 800; // Increased base size of circles
+    const circleOverlap = 0.5; // More overlap
+    const divWidth = floatingBackground.offsetWidth;
+    const divHeight = floatingBackground.offsetHeight;
+    const numberOfCirclesHorizontal = Math.ceil(divWidth / (circleSize * circleOverlap)) + 1;
+    const numberOfCirclesVertical = Math.ceil(divHeight / (circleSize * circleOverlap)) + 1;
+    const totalCircles = numberOfCirclesHorizontal * numberOfCirclesVertical;
 
-            for (let i = 0; i < numberOfCircles; i++) {
-                const circle = document.createElement('div');
-                circle.classList.add('floating-circle');
-                const size = Math.random() * 200 + circleSize; // Larger size range
-                circle.style.width = `${size}px`;
-                circle.style.height = `${size}px`;
-                const color = colorsCircles[Math.floor(Math.random() * colorsCircles.length)];
-                circle.style.backgroundColor = color;
-                
-                const startX = i * circleSize * circleOverlap - size / 2;
-                circle.style.left = `${startX}px`;
-                
-                const startY = Math.random() * -50; // Start higher up
-                circle.style.top = `${startY}%`;
+    for (let i = 0; i < totalCircles; i++) {
+        const circle = document.createElement('div');
+        circle.classList.add('floating-circle');
+        const size = Math.random() * 200 + circleSize; // Larger size range
+        circle.style.width = `${size}px`;
+        circle.style.height = `${size}px`;
+        const color = colorsCircles[Math.floor(Math.random() * colorsCircles.length)];
+        circle.style.backgroundColor = color;
+        
+        const column = i % numberOfCirclesHorizontal;
+        const row = Math.floor(i / numberOfCirclesHorizontal);
+        
+        const startX = column * circleSize * circleOverlap - size / 2;
+        const startY = row * circleSize * circleOverlap - size / 2;
+        
+        circle.style.left = `${startX}px`;
+        circle.style.top = `${startY}px`;
 
-                const translateX = (Math.random() - 0.5) * 80; // Increased horizontal movement
-                const translateY = Math.min(60 - startY, Math.random() * 60); // Increased vertical movement
-                circle.style.setProperty('--translate-x', `${translateX}px`);
-                circle.style.setProperty('--translate-y', `${translateY}px`);
+        const translateX = (Math.random() - 0.5) * 80; // Horizontal movement
+        const translateY = (Math.random() - 0.5) * 80; // Vertical movement (both up and down)
+        circle.style.setProperty('--translate-x', `${translateX}px`);
+        circle.style.setProperty('--translate-y', `${translateY}px`);
 
-                circle.style.animationDuration = `${Math.random() * 2 + 3}s`; // Even faster animation
-                circle.style.animationDelay = `${Math.random() * -3}s`;
+        circle.style.animationDuration = `${Math.random() * 2 + 3}s`; // Fast animation
+        circle.style.animationDelay = `${Math.random() * -3}s`;
 
-                floatingBackground.appendChild(circle);
-            }
-  }
+        floatingBackground.appendChild(circle);
+    }
+}
 
   createFloatingCircles();
   window.addEventListener('resize', () => {
