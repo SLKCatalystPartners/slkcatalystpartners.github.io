@@ -15,10 +15,13 @@
 	height: calc(100vh - 80px);
 	overflow: hidden;
 	color: #fff;
+	h1, p {
+		color: #fff;
+	}
 }
 
 .floating-background {
-	background-color:#006548;
+	background-color:#130950;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -32,7 +35,7 @@
 	position: absolute;
 	border-radius: 50%;
 	opacity: 0.1;
-	filter: blur(100px);
+	filter: blur(60px);
 	animation: float 5s infinite ease-in-out;
 }
 @keyframes float {

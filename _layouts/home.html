@@ -64,7 +64,7 @@ header_class: white
 
 <script>
   const floatingBackground = document.getElementById('floatingBackground');
-  const colorsCircles = ['#FFC72C', '#24228c', '#130950'];
+  const colorsCircles = ['#FFC72C', '#24228c', '#006548'];
   const colorsDots = ['#00A850', '#FFC72C', '#E6F3ED', '#F9F3E1'];
 
   function createFloatingCircles() {
@@ -86,7 +86,7 @@ header_class: white
           const startX = i * circleSize * circleOverlap - size / 2;
           circle.style.left = `${startX}px`;
           
-          const startY = Math.random() * - 30 - 20; // Start higher up
+          const startY = Math.random() * - 50; // Start higher up
           circle.style.top = `${startY}%`;
 
           const translateX = (Math.random() - 0.5) * divWidth *.1; // Increased horizontal movement
@@ -94,7 +94,7 @@ header_class: white
           circle.style.setProperty('--translate-x', `${translateX}px`);
           circle.style.setProperty('--translate-y', `${translateY}px`);
 
-          circle.style.animationDuration = `${Math.random() * 2 + 1}s`; // Even faster animation
+          circle.style.animationDuration = `${Math.random() * 2 + 2}s`; // Even faster animation
           circle.style.animationDelay = `${Math.random() * -3}s`;
 
           floatingBackground.appendChild(circle);
