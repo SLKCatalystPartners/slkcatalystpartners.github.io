@@ -1,4 +1,4 @@
-<div class='header'>
+<header class="{{ headerClass }}">
   <div class="container">
     <div class="logo">
       <a href="{{ site.url }}"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
@@ -9,4 +9,4 @@
     {% include main-menu.html %}
     {% include hamburger.html %}
   </div>
-</div>
+</header>
