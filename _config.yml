@@ -5,11 +5,13 @@ title: 'SLK Catalyst Partners'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
+  mobile_white: "images/logo/logo-mobile-white.svg"
   mobile_height: "32px"
   mobile_width: "32px"
   desktop: "images/logo/logo.svg"
   desktop_height: "100px"
   desktop_width: "260px"
+  desktop_white: "images/logo/logo-white.svg"
 
 home: 
   limit_domains: 6
