@@ -10,7 +10,7 @@ logo:
   mobile_width: "32px"
   desktop: "images/logo/logo.svg"
   desktop_height: "100px"
-  desktop_width: "260px"
+  desktop_width: "220px"
   desktop_white: "images/logo/logo-white.svg"
 
 home: 
