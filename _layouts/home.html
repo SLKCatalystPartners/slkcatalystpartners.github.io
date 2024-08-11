@@ -181,7 +181,7 @@ header_class: white
 
   function animate() {
       ctx.clearRect(0, 0, width, height);
-      time += 0.03;
+      time += 0.001;
       for (let i = 0; i < dots.length; i++) {
           dots[i].move();
           dots[i].draw();
