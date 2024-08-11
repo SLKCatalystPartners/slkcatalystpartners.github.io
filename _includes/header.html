@@ -2,15 +2,16 @@
   <div class="container">
     <div class="logo{% if page.header_class == 'white' %} logo-white{% endif %}">
       <a href="{{ site.url }}">
-        <img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" />
+        <img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{% if page.header_class == 'white' %}{{ site.logo.desktop_white | relative_url }}{% else %}{{ site.logo.desktop | relative_url }}{% endif %}" />
       </a>
     </div>
     <div class="logo-mobile{% if page.header_class == 'white' %} logo-mobile-white{% endif %}">
       <a href="{{ site.url }}">
-        <img width="{{ site.logo.mobile_width }}" height="{{ site.logo.mobile_height }}" alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" />
+        <img width="{{ site.logo.mobile_width }}" height="{{ site.logo.mobile_height }}" alt="{{ site.title }}" src="{% if page.header_class == 'white' %}{{ site.logo.mobile_white | relative_url }}{% else %}{{ site.logo.mobile | relative_url }}{% endif %}" />
       </a>
     </div>
     {% include main-menu.html %}
     {% include hamburger.html %}
   </div>
 </header>
+
