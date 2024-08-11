@@ -24,37 +24,36 @@
 			color: #fff;
 		}
 	}
+	.floating-background {
+		background-color:#130950;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 80px);
+		z-index: 0;
+		overflow: hidden;
+		z-index: 0.1;
+		min-height: 550px;
+	}
+	.floating-circle {
+		position: absolute;
+		border-radius: 50%;
+		filter: blur(60px);
+		animation: float 5s infinite ease-in-out;
+	}
+	@keyframes float {
+		0%, 100% { transform: translate(0, 0); }
+		50% { transform: translate(var(--translate-x), var(--translate-y)); }
+	}
+	#backgroundCanvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 80px);
+		min-height: 550px;
+		z-index: 0.5;
+	}
 }
 
-
-.floating-background {
-	background-color:#130950;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: calc(100vh - 80px);
-	z-index: 0;
-	overflow: hidden;
-	z-index: 0.1;
-	min-height: 550px;
-}
-.floating-circle {
-	position: absolute;
-	border-radius: 50%;
-	filter: blur(60px);
-	animation: float 5s infinite ease-in-out;
-}
-@keyframes float {
-	0%, 100% { transform: translate(0, 0); }
-	50% { transform: translate(var(--translate-x), var(--translate-y)); }
-}
-#backgroundCanvas {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: calc(100vh - 80px);
-	min-height: 550px;
-	z-index: 0.5;
-}
