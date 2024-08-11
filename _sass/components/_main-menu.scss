@@ -7,11 +7,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
     > li {
       list-style: none;
       font-size: 1rem;
+      position: relative;
       > a {
-        padding: 10px 12px 10px 12px;
+        padding: 10px 12px;
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
@@ -20,13 +22,55 @@
           text-decoration: underline;
         }
       }
-      &.active {
-        > a {
-          font-weight: bold;
+      &.active > a {
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
           text-decoration: none;
+          transition: all 225ms ease-in 0s;
+        }
+      }
+      &.dropdown {
+        cursor: pointer;
+        > a::after {
+          content: "▼";
+          margin-left: 8px;
+        }
+        &:hover > .dropdown-content {
+          display: block;
+        }
+      }
+    }
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 250px;
+    > ul {
+      display: block;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      > li {
+        padding: 10px 15px;
+        > a {
+          text-decoration: none;
+          display: block;
+          color: $primary;
           &:hover {
-            text-decoration: none;
-            transition: all 225ms ease-in 0s;
+            background-color: #f0f0f0;
+          }
+          > strong {
+            display: block;
+          }
+          > span {
+            font-size: 0.9rem;
+            color: #666;
           }
         }
       }

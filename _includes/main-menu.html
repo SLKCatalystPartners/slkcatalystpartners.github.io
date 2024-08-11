@@ -1,10 +1,26 @@
 <div id="main-menu" class="main-menu">
-  {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
+  {% assign mainmenu = site.data.menus.main | sort: 'weight' %}
   <ul>
     {% for item in mainmenu %}
-    <li class="{% if item.url == page.url %}active{% endif %}">
-      <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-    </li>
+      <li class="{% if item.url == page.url %}active{% endif %} {% if item.submenu %}dropdown{% endif %}">
+        <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+        
+        {% if item.submenu %}
+          <div class="dropdown-content">
+            <ul>
+              {% assign submenu = site.data.frameworks.frameworks | sort: 'weight' %}
+              {% for subitem in submenu %}
+                <li>
+                  <a href="{{ subitem.url | relative_url }}">
+                    <strong>{{ subitem.name }}</strong>
+                    <span>{{ subitem.description }}</span>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      </li>
     {% endfor %}
   </ul>
 </div>

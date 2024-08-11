@@ -2,9 +2,11 @@ main:
   - name: "Approach"
     url: "/approach/"
     weight: 2
+    submenu: "frameworks"
   - name: "Private Equity Practice"
     url: "/private-equity-practice/"
     weight: 3    
+    submenu: "expertise"
   - name: "About"
     url: "/about/"
     weight: 4

@@ -1,16 +1,21 @@
 frameworks:
   - name: "Transform your strategic vision "
+    description: "Align your organization with a clear, actionable strategic direction"
     url: "/approach/"
     weight: 1
   - name: "Untangle your inefficiencies"
+    description: "Streamline operations for maximum efficiency and productivity"
     url: "/approach/"
     weight: 2
   - name: "Innovate out of stagnation "
+    description: "Ignite growth with fresh, breakthrough innovations"
     url: "/private-equity-practice/"
     weight: 3    
   - name: "Comprehend your market"
+    description: "Gain deep market insights to sharpen your competitive edge"
     url: "/about/"
     weight: 4
   - name: "Harness technology for advantages "
+    description: "Leverage technology to transform and elevate your business"
     url: "/contact/"
     weight: 5
