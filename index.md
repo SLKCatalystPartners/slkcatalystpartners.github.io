@@ -3,7 +3,7 @@ title: SLK Catalyst Partners
 layout: home
 description: Strategic Conundrum? We've got the frameworks to navigate through.
 hero-heading: Strategic Conundrum? We've got the frameworks to navigate through.
-hero-text: With outcomes aligned, SLK Catalyst Partners brings proven frameworks to empower both private equity sponsors, their portfolio companies, and standalone
+hero-text: With outcomes aligned, SLK Catalyst Partners brings proven frameworks to empower both private equity sponsors– their portfolio companies–and standalone companies
 hero-link: approach
 hero-link-text: Check out our Approach
 
