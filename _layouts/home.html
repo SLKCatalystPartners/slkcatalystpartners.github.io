@@ -1,8 +1,7 @@
 ---
 layout: default
 bodyClass: "page-home"
-header_class: white
-show_background: true
+
 ---
 
 <div class="intro hero">
@@ -12,6 +11,31 @@ show_background: true
       <div class="col-12 col-md-8 col-lg-6 order-2">
       <p class="large">{{ page.hero-text}}</p>
       <a class="btn large btn-primary" href="{{absolute_url }}/{{ page.hero-link }}">{{ page.hero-link-text }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="strip link-hook">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <h3>{{ page.domains-title }}</h3>
+        <ul>
+        {% assign frameworks = site.data.frameworks.framework | sort: 'weight'  %}
+        {% for item in frameworks %}
+          <li><a href="{{absolute_url}}/{{item.url}}">{{ item.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <h3>{{ page.pe-title }}</h3>
+        <ul>
+        {% assign peexpertise = site.data.pe.expertise | sort: 'weight'  %}
+        {% for item in peexpertise %}
+          <li><a href="{{absolute_url}}/{{item.url}}">{{ item.name }}</a></li>
+        {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
