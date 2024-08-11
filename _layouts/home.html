@@ -122,14 +122,17 @@ header_class: white
   let dots = [];
   let time = 0;
 
+  const BASE_WIDTH = 1920; // Average screen width
+  const BASE_DOT_COUNT = 50; // Desired dot count for average width
+
   class Dot {
       constructor(x, y) {
           this.x = x;
           this.baseX = x;
           this.y = y;
           this.baseY = y;
-          this.vx = (Math.random() - 0.5) * 0.65;
-          this.vy = (Math.random() - 0.5) * 0.65;
+          this.vx = (Math.random() - 0.5) * 0.65 * (width / BASE_WIDTH); // Scale velocity based on width
+          this.vy = (Math.random() - 0.5) * 0.65 * (height / BASE_WIDTH);
           this.radius = Math.random() * 2 + 1;
           this.color = colorsDots[Math.floor(Math.random() * colorsDots.length)];
           this.phaseX = Math.random() * Math.PI * 2;
@@ -173,15 +176,20 @@ header_class: white
   function init() {
       width = canvas.width = window.innerWidth;
       height = canvas.height = window.innerHeight;
+      
+      // Calculate dot count based on screen width
+      const scaleFactor = Math.max(0.5, Math.min(1, width / BASE_WIDTH)); // Limit scaling between 0.5 and 1
+      const adjustedDotCount = Math.round(BASE_DOT_COUNT * scaleFactor);
+      
       dots = [];
-      for (let i = 0; i < dotCount; i++) {
+      for (let i = 0; i < adjustedDotCount; i++) {
           dots.push(new Dot(Math.random() * width, Math.random() * height));
       }
   }
 
   function animate() {
       ctx.clearRect(0, 0, width, height);
-      time += 0.0005;
+      time += 0.0005; // Keep this constant for consistent animation speed
       for (let i = 0; i < dots.length; i++) {
           dots[i].move();
           dots[i].draw();
