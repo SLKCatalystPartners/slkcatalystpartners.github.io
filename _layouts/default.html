@@ -28,8 +28,10 @@
 </head>
 
 <body class='page {{layout.bodyClass}}'>
-  <div class="floating-background" id="floatingBackground"></div>
-  <canvas id="backgroundCanvas"></canvas>
+  {% if page.url == "/" %}
+    <div class="floating-background" id="floatingBackground"></div>
+    <canvas id="backgroundCanvas"></canvas>
+  {% endif %}
   {% include main-menu-mobile.html %}
   <div id="wrapper" class="wrapper">
     {% include header.html headerClass='header-extra' %}
