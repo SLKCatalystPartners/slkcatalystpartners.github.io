@@ -29,11 +29,8 @@
 
 <body class='page {{layout.bodyClass}}'>
   {% if page.show_background %}
-    <p>Show background is true</p>
     <div class="floating-background" id="floatingBackground"></div>
     <canvas id="backgroundCanvas"></canvas>
-  {% else %}
-    <p>Show background is false or not set</p>
   {% endif %}
   {% include main-menu-mobile.html %}
   <div id="wrapper" class="wrapper">
