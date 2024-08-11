@@ -10,7 +10,7 @@ header_class: white
       <h1 class="col-12 col-md-10 col-lg-12 order-1 order-md-1">{{ page.hero-heading}}</h1>
       <div class="col-12 col-md-8 col-lg-6 order-2 order-md-2">
       <p class="large">>{{ page.hero-text}}</p>
-      <a class="large" href="{{absolute_url }}/{{ page.hero-link }}">/{{ page.hero-link-text }}</a>
+      <a class="large" href="{{absolute_url }}/{{ page.hero-link }}">{{ page.hero-link-text }}</a>
       </div>
     </div>
   </div>
@@ -99,7 +99,7 @@ header_class: white
         circle.style.setProperty('--translate-x', `${translateX}px`);
         circle.style.setProperty('--translate-y', `${translateY}px`);
 
-        circle.style.animationDuration = `${Math.random() * 2 + 3}s`; // Fast animation
+        circle.style.animationDuration = `${Math.random() * 2 + 1}s`; // Fast animation
         circle.style.animationDelay = `${Math.random() * -3}s`;
 
         floatingBackground.appendChild(circle);
@@ -118,7 +118,7 @@ header_class: white
 
   let width, height;
   const dotCount = 50;
-  const connectionDistance = 50;
+  const connectionDistance = 100;
   let dots = [];
   let time = 0;
 
@@ -181,7 +181,7 @@ header_class: white
 
   function animate() {
       ctx.clearRect(0, 0, width, height);
-      time += 0.013;
+      time += 0.03;
       for (let i = 0; i < dots.length; i++) {
           dots[i].move();
           dots[i].draw();
@@ -193,7 +193,7 @@ header_class: white
                   ctx.beginPath();
                   ctx.moveTo(dots[i].x, dots[i].y);
                   ctx.lineTo(dots[j].x, dots[j].y);
-                  ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - distance / connectionDistance)})`;
+                  ctx.strokeStyle = `rgba(255, 255, 255, ${0.2 * (1 - distance / connectionDistance)})`;
                   ctx.stroke();
               }
           }

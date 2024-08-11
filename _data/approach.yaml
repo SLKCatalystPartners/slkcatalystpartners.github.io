@@ -1,0 +1,16 @@
+links:
+  - name: "Transform your strategic vision "
+    url: "/approach/"
+    weight: 1
+  - name: "Untangle your inefficiencies"
+    url: "/approach/"
+    weight: 2
+  - name: "Innovate out of stagnation "
+    url: "/private-equity-practice/"
+    weight: 3    
+  - name: "Comprehend your market"
+    url: "/about/"
+    weight: 4
+  - name: "Harness technology for advantages "
+    url: "/contact/"
+    weight: 5
