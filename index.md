@@ -11,4 +11,4 @@ hero-link-text: Check out our Approach
 <div class="col-12 col-md-8 col-lg-6 order-2 order-md-2">
 <p class="large">With outcomes aligned, SLK Catalyst Partners brings proven frameworks to empower both private equity sponsors, their portfolio companies, and standalone</p>
 <a class="large" href="/approach">Check out our Approach</a>
-
+</div>
