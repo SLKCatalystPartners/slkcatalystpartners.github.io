@@ -5,22 +5,22 @@ p {
   margin-bottom: 20px;
 }
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-family: $font-family-heading;
   line-height: 1.2;
   margin-bottom: 20px;
   @include media-breakpoint-up(md) {
-    font-size: 32px;
+    font-size: 56px;
     line-height: 1.2;
   }
 }
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   font-family: $font-family-heading;
   line-height: 1.4;
   margin-bottom: 10px;
   @include media-breakpoint-up(md) {
-    font-size: 26px;
+    font-size: 48px;
     line-height: 1.4;
   }
 }
