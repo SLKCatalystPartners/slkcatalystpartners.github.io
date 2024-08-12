@@ -94,8 +94,8 @@ bodyClass: "page-home"
         circle.style.left = `${startX}px`;
         circle.style.top = `${startY}px`;
 
-        const translateX = (Math.random() - 0.5) * 80; // Horizontal movement
-        const translateY = (Math.random() - 0.5) * 80; // Vertical movement (both up and down)
+        const translateX = (Math.random()) * 80; // Horizontal movement
+        const translateY = (Math.random()) * 80; // Vertical movement (both up and down)
         circle.style.setProperty('--translate-x', `${translateX}px`);
         circle.style.setProperty('--translate-y', `${translateY}px`);
 
