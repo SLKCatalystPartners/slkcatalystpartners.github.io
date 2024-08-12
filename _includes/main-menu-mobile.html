@@ -2,29 +2,8 @@
   {% assign mainmenu = site.data.menus.main | sort: 'weight' %}
   <ul>
     {% for item in mainmenu %}
-      <li class="{% if item.url == page.url %}active{% endif %} {% if item.submenu %}dropdown{% endif %}">
+      <li class="{% if item.url == page.url %}active{% endif %}">
         <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-        
-        {% if item.submenu %}
-          {% assign submenu_file = site.data[item['submenu-data']] %}
-          {% assign submenu_data = submenu_file[item.submenu] %}
-          {% if submenu_data %}
-            <div class="dropdown-content">
-              <ul>
-                {% for subitem in submenu_data %}
-                  <li>
-                    <a href="{{ subitem.url | relative_url }}">
-                      <strong>{{ subitem.name }}</strong>
-                      <span>{{ subitem.description }}</span>
-                    </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% else %}
-            <div class="dropdown-content">No submenu found for {{ item.submenu }}</div>
-          {% endif %}
-        {% endif %}
       </li>
     {% endfor %}
   </ul>

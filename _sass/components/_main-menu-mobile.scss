@@ -1,6 +1,6 @@
 .main-menu-mobile {
   position: fixed;
-  background: $primary;
+  background: $navy-blue;
   top: 0;
   left: 0;
   width: 100%;
@@ -89,9 +89,9 @@
           > li {
             padding: 10px 0;
             > a {
-              color: $primary;
+              color: $white;
               &:hover {
-                color: $primary-dark;
+                opacity: 0.5;
               }
             }
           }

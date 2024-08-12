@@ -12,4 +12,5 @@ domains-title: Catalyzing Bold Transformation
 pe-title: Co-creating and Realizing the private equity thesis
 hook-title: How We Can Help
 hook-subtitle: We connect with our clients through established competencies in the areas of
+
 ---
