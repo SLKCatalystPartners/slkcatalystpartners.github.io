@@ -24,7 +24,7 @@ $steel: #5c5a5a;
 // Links
 $link-color: $primary;
 $link-decoration: none;
-$link-hover-color: $emerald-green;
+$link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: none;
 
 // Fonts
