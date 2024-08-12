@@ -1,17 +1,15 @@
 .page-home {
-
 	.intro {
 		li {
-			font-size: 1.2rem;
+			font-size: 1.5rem;
 	        margin-left: 40px;
 	        font-weight: regular;
-	        color: rgb(104, 104, 104);
 		}
 	}
 	.hero {
 		position: relative;
 		width: 100%;
-		height: calc(100vh - 80px);
+		height: calc(100vh - 160px);
 		overflow: hidden;
 		color: #fff;
 		display: flex;
@@ -20,6 +18,9 @@
 		padding-top: 0px;
 		h1, p {
 			color: #fff;
+		}
+		@include media-breakpoint-up(md) {
+			height: calc(100vh - 80px);
 		}
 	}
 	.floating-background {

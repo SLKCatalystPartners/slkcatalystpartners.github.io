@@ -51,7 +51,7 @@ bodyClass: "page-home"
       <div class="col-12">
         <h2>{{ page.explanatory-title }}</h2>
       </div>  
-      {% for item in explanatory-approach |  sort: 'weight' %}
+      {% for item in explanatory-approach %}
       <div class="col-6 col-md-3 mb-2">
         <img src="" />
         <h3>{{ item.title }}</h3>
