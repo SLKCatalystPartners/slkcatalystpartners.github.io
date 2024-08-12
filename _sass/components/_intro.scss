@@ -11,14 +11,14 @@
   }
   h1 {
     color: $black;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 1.2;
     @include media-breakpoint-up(md) {
       font-size: 48px;
     }
     @include media-breakpoint-up(lg) {
-      font-size: 50px;
+      font-size: 64px;
     }
   }
   h2 {
@@ -29,10 +29,15 @@
     font-family: $font-family-base;
   }
   p {
-    font-size: 1.2rem;
     font-weight: light;
     line-height: 1.5;
     color: $steel;
+  }
+  p, a {
+    font-size: 18px;
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+    }
   }
 }
 
