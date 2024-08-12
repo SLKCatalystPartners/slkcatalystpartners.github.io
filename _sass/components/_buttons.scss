@@ -23,3 +23,15 @@
     text-decoration: none;
   }
 }
+
+.arrow {
+  &:after{
+    content: "&#10230";
+    padding-left: 1em;
+  }
+  &:hover {
+    &:after {
+      padding-left: 2em;
+    }
+  }
+}
