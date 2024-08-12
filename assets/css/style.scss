@@ -1,9 +1,20 @@
 ---
 ---
+$mustard-yellow: #fed549;
+$dark-yellow: #faa61a;
+$emerald-green: #0d6548;
+$light-green: #59bc5d;
+$plum-purple: #812777;
+$peach-orange: #f4956a;
+$pink-blush: #f2778f;
+$navy-blue: #161941;
+$light-blue: #2f7cbf;
+$tangerine: #ef5028;
+$light-violet: #c27db5;
 
 // Colors
-$primary: #5cbb5d;
-$primary-dark: #006548;
+$primary: $light-green;
+$primary-dark: $emerald-green;
 $secondary: #161a41;
 $black: #2f2f41;
 $white: #ffffff;
@@ -13,8 +24,8 @@ $steel: #5c5a5a;
 // Links
 $link-color: $primary;
 $link-decoration: none;
-$link-hover-color: lighten($primary, 10%);
-$link-hover-decoration: underline;
+$link-hover-color: $emerald-green;
+$link-hover-decoration: none;
 
 // Fonts
 $font-family-base: "aktiv-grotesk", Helvetica, Arial, sans-serif, -apple-system;

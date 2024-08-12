@@ -6,19 +6,24 @@
         <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
         
         {% if item.submenu %}
-          <div class="dropdown-content">
-            <ul>
-              {% assign submenu = site.data.frameworks.frameworks %}
-              {% for subitem in submenu %}
-                <li>
-                  <a href="{{ subitem.url | relative_url }}">
-                    <strong>{{ subitem.name }}</strong>
-                    <span>{{ subitem.description }}</span>
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
+          {% assign submenu_file = site.data[item['submenu-data']] %}
+          {% assign submenu_data = submenu_file[item.submenu] %}
+          {% if submenu_data %}
+            <div class="dropdown-content">
+              <ul>
+                {% for subitem in submenu_data %}
+                  <li>
+                    <a href="{{ subitem.url | relative_url }}">
+                      <strong>{{ subitem.name }}</strong>
+                      <span>{{ subitem.description }}</span>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% else %}
+            <div class="dropdown-content">No submenu found for {{ item.submenu }}</div>
+          {% endif %}
         {% endif %}
       </li>
     {% endfor %}
