@@ -6,7 +6,7 @@ main:
   - name: "Private Equity Practice"
     url: "/private-equity-practice/"
     weight: 3    
-    submenu: "expertise"
+    submenu: "pe"
   - name: "About"
     url: "/about/"
     weight: 4

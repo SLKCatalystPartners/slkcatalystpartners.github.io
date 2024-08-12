@@ -8,7 +8,7 @@
         {% if item.submenu %}
           <div class="dropdown-content">
             <ul>
-              {% assign submenu = site.data[item.submenu] | sort: 'weight' %}
+              {% assign submenu = site.data[item.submenu] %}
               {% for subitem in submenu %}
                 <li>
                   <a href="{{ subitem.url | relative_url }}">
