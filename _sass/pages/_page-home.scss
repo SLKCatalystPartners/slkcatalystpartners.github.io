@@ -68,6 +68,9 @@
 			list-style:none;
 			display: block;
 			border-top: 1px solid $white-offset;
+			a {
+				color: $steel;
+			}
 		}
 		border-bottom: 1px solid $white-offset;
 	}
