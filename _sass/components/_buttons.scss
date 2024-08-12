@@ -26,7 +26,7 @@
 
 .arrow {
   &:after{
-    content: "&#10230;";
+    content: "\27F6";
     padding-left: 1em;
   }
   &:hover {
