@@ -93,3 +93,19 @@
     }
   }
 }
+
+.white .main-menu {
+  > ul {
+    > li {
+      > a {
+        color: $white;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      &.active > a {
+        opacity: 0.8;
+      }
+    }
+  }
+}
