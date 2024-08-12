@@ -75,17 +75,13 @@
           &:hover {
             color: $white;
             background-color: $emerald-green;
-            a {
-              color: $white;
-            }
-            span {
-              color: $white;
-            }
           }
           > strong {
+            color: $white;
             display: block;
           }
           > span {
+            color: $white;
             opacity: 0.5;
           }
         }
