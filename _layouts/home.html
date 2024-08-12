@@ -20,10 +20,10 @@ bodyClass: "page-home"
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
       <div class="col-12">
-        <h2>{{ page.hook-title }}</h2>
-        <p class="large">{{ page.hook-subtitle }}</p>
+        <h2 class="h4">{{ page.hook-title }}</h2>
+        <p class="h2">{{ page.hook-subtitle }}</p>
       </div>        
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="col-12 col-md-6 mb-2">
         <h3>{{ page.frameworks-title }}</h3>
         <ul>
           {% assign frameworks = site.data.frameworks.frameworks | sort: 'weight' %}
@@ -32,7 +32,7 @@ bodyClass: "page-home"
           {% endfor %}
         </ul>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="col-12 col-md-6 mb-2">
         <h3>{{ page.pe-title }}</h3>
         <ul>
           {% assign expertise = site.data.pe.expertise | sort: 'weight' %}

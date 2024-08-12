@@ -56,3 +56,19 @@
 	}
 }
 
+.link-hook {
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			font-size: 1.5rem;
+			margin: 0;
+			padding-top: $grid-gutter-width;
+			padding-bottom: $grid-gutter-width;
+			list-style:none;
+			display: block;
+			border-top: 1px solid $white-offset;
+		}
+		border-bottom: 1px solid $white-offset;
+	}
+}
