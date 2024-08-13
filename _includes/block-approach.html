@@ -1,22 +1,17 @@
 <div class="strip-grey explanatory">
     <div class="container pt-6 pb-6 pb-md-10">
         <div class="row justify-content-start">
-        <div class="col-12">
-            <h2 class="small-upper">{{ page.explanatory-title }}</h2>
-        </div>  
-        {% assign approach = site.data.approach.approach | sort: 'order' %}
-        {% for item in approach %}
-        <div class="col-6 col-md-3 mb-2">
-            <i class="bi {{ item.icon }}"></i>
-            <h4>{{ item.title }}</h4>
-            <p>{{ item.text }}</p>
-        </div>
-        {% endfor %}
+            <div class="col-12">
+                <h2 class="small-upper">{{ page.explanatory-title }}</h2>
+            </div>  
+            {% assign approach = site.data.approach.approach | sort: 'order' %}
+            {% for item in approach %}
+            <div class="col-6 col-md-3 mb-2">
+                <i class="bi {{ item.icon }}"></i>
+                <h4>{{ item.step }}</h4> <!-- Changed to 'step' -->
+                <p>{{ item.description }}</p> <!-- Changed to 'description' -->
+            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
-
-{% assign frameworks = site.data.frameworks.frameworks | sort: 'weight' %}
-{% for item in frameworks %}
-  <li><a class="arrow" href="{{ item.url | absolute_url }}">{{ item.name }}</a></li>
-{% endfor %}
