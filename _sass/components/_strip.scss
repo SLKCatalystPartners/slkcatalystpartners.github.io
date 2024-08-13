@@ -56,8 +56,8 @@
   background-size: cover;
 }
 
-.about {
-  .strip {
+.strip {
+  &.strip {
     .bi {
       font-size: 2rem;
       text-align: center;
@@ -71,11 +71,11 @@
       color: $primary-dark
     }
   }
-}
-
-.quotes {
-  .bi-quote {
-    opacity: 0.5;
-    color: $steel;
+  &.quotes {
+    .bi-quote {
+      opacity: 0.5;
+      color: $steel;
+    }
   }
 }
+
