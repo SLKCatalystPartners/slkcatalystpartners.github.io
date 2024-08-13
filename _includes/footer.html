@@ -2,11 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6">
-        <h2 class="footer-title">{{site.data.footer.title}}</h2>
-        <p class="large">{{site.data.footer.subtitle}}</p>
+        <h2 class="h3">{{site.data.footer.title}}</h2>
+        <p>{{site.data.footer.subtitle}}</p>
+        <a class="arrow" href="{{absolute_url}}/{{site.data.footer.link}}">{{site.data.footer.link-text}}</a>
       </div>
-      <div class="col-12 col-md-12">
-        <a class="btn btn-lg btn-primary" href="{{absolute_url}}/{{site.data.footer.link}}">{{site.data.footer.link}}</a>
+      <div class="col-12 col-md-6">
+       
         <ul>
           {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
           {% for item in footermenu %}

@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             {% if page.quotes-title %}
             <div class="col-12">
-                <h2 class="small-upper">{{ page.quotes-title }}</h2>
+                <h2 class="small-upper text-center">{{ page.quotes-title }}</h2>
             </div>  
             {% endif %}
             {% assign quotes = site.data.quotes.quotes | sort: 'weight' %}

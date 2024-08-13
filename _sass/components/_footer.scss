@@ -1,5 +1,5 @@
 .footer {
-  background: $footer-background-color;
+  background: $secondary;
   padding-top: 15px;
   padding-bottom: 15px;
   .footer-inner {
@@ -13,15 +13,6 @@
       align-items: center;
     }
   }
-  .footer-title {
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-family: $font-family-heading;
-    font-weight: bold;
-    margin-bottom: 10px;
-    @include media-breakpoint-up(sm) {
-      margin: 0;
-    }
   }
   ul {
     list-style: none;
