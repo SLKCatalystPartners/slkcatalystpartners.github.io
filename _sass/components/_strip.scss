@@ -55,3 +55,28 @@
 .strip-bg-cover {
   background-size: cover;
 }
+
+.about {
+  .strip {
+    .bi {
+      font-size: 2rem;
+      text-align: center;
+      color: $primary-dark;
+    }
+    h4 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      color: $primary-dark
+    }
+  }
+}
+
+.quotes {
+  .bi-quote {
+    font-size: 2rem;
+    text-align: center;
+    color: $steel;
+  }
+}

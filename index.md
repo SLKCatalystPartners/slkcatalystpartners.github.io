@@ -10,5 +10,6 @@ hero-link: approach
 hero-link-text: Check out our Approach
 frameworks-title: Catalyze Bold Transformation
 pe-title: Realize the Private Equity Thesis
-hook-title: How we can help          
+hook-title: How we can help
+approach-title: How we work          
 ---
