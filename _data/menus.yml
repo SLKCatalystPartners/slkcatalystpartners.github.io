@@ -1,25 +1,43 @@
 main:
   - name: "Approach"
     url: "/approach/"
-    weight: 2
+    weight: 1
     submenu-data: "frameworks"
     submenu: "frameworks"
   - name: "Private Equity Practice"
     url: "/private-equity-practice/"
-    weight: 3   
+    weight: 2   
     submenu-data: "pe" 
     submenu: "expertise"
   - name: "About"
     url: "/about/"
-    weight: 4
+    weight: 3
   - name: "Contact"
     url: "/contact/"
-    weight: 5
+    weight: 4 
 
 footer:
-  - name: "Home"
-    url: "/"
+  - name: "Approach"
+    url: "/approach/"
     weight: 1
+    submenu-data: "frameworks"
+    submenu: "frameworks"
+  - name: "Private Equity Practice"
+    url: "/private-equity-practice/"
+    weight: 2   
+    submenu-data: "pe" 
+    submenu: "expertise"
+  - name: "About"
+    url: "/about/"
+    weight: 3
   - name: "Contact"
     url: "/contact/"
+    weight: 4
+
+sub-footer:
+  - name: "Privacy Policy"
+    url: "/privacy-olicy/"
+    weight: 1
+  - name: "Terms of Use"
+    url: "/terms-of-use/"
     weight: 2
