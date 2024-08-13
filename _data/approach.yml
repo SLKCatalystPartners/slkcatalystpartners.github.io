@@ -1,17 +1,17 @@
 approach:
-    - step: "Research"
+  - step: "Research"
     order: 1
     description: "We first understand your company’s unique market environment to identify and better understand your problem areas"
     icon: "bi-search"
-    - step: "Design"
+  - step: "Design"
     order: 2
     description: "We collaborate with you to apply our tested frameworks against your problem areas"
     icon: "bi-pen"
-    - step: "Build"
+  - step: "Build"
     order: 3
     description: "We build a tangible strategy that can be put into action, while mentoring your management team(s) to apply and execute our frameworks"
     icon: "bi-border-inner"
-    - step: "Implement"
+  - step: "Implement"
     order: 4
     description: "We stand ready with our highly experienced, talented consulting team to program manage and provide surge capacity where you need assistance to help you deliver on your strategy"
     icon: "bi-people"
