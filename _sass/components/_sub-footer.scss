@@ -1,12 +1,8 @@
 .sub-footer {
-  background: $sub-footer-background-color;
-  color: $sub-footer-text-color;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  @include media-breakpoint-up(md) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+  background: darken($secondary,10%);
+  color: $white;
+  opacity: 0.5
+  padding: $grid-gutter-width 0;
   .sub-footer-inner {
     display: flex;
     flex-direction: column;
