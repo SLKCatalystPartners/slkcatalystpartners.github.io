@@ -4,8 +4,8 @@
             {% assign quotes = site.data.quotes.quotes | sort: 'weight' %}
             {% for item in quotes %}
             <div class="col-6 col-md-6">
-                <i class="bi bi-quote"></i>
-                <p class="h4">{{ item.text }}</p>
+                
+                <p class="h4"><i class="bi bi-quote"></i> {{ item.text }}</p>
             </div>
             {% endfor %}
         </div>
