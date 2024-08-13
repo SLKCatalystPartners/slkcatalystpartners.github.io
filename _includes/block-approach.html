@@ -4,14 +4,19 @@
         <div class="col-12">
             <h2 class="small-upper">{{ page.explanatory-title }}</h2>
         </div>  
-        {% assign explanatory-approach = site.data.approach.steps | sort: 'order' %}
-        {% for step in explanatory-approach %}
+        {% assign approach = site.data.approach.approach | sort: 'order' %}
+        {% for item in approach %}
         <div class="col-6 col-md-3 mb-2">
-            <i class="bi {{ step.icon }}"></i>
-            <h4>{{ step.title }}</h4>
-            <p>{{ step.text }}</p>
+            <i class="bi {{ item.icon }}"></i>
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.text }}</p>
         </div>
         {% endfor %}
         </div>
     </div>
 </div>
+
+{% assign frameworks = site.data.frameworks.frameworks | sort: 'weight' %}
+{% for item in frameworks %}
+  <li><a class="arrow" href="{{ item.url | absolute_url }}">{{ item.name }}</a></li>
+{% endfor %}
