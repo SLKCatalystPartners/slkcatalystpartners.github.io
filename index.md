@@ -8,7 +8,7 @@ hero-heading: Strategic Conundrum? We've got the frameworks to navigate through.
 hero-text: With outcomes aligned, SLK Catalyst Partners brings proven frameworks to empower both private equity sponsors– their portfolio companies–and standalone companies
 hero-link: approach
 hero-link-text: Check out our Approach
-frameworks-title: Catalyzing Bold Transformation
-pe-title: Realizing the private equity thesis
+frameworks-title: Catalyze Bold Transformation
+pe-title: Realize the Private Equity Thesis
 hook-title: How we can help          
 ---

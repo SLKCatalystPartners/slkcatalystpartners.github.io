@@ -23,7 +23,7 @@ bodyClass: "page-home"
         <h2 class="small-upper">{{ page.hook-title }}</h3>
       </div>        
       <div class="col-12 col-md-6 mb-2">
-        <h3 class="h2">{{ page.frameworks-title }}</h3>
+        <h3>{{ page.frameworks-title }}</h3>
         <ul>
           {% assign frameworks = site.data.frameworks.frameworks | sort: 'weight' %}
           {% for item in frameworks %}
@@ -32,7 +32,7 @@ bodyClass: "page-home"
         </ul>
       </div>
       <div class="col-12 col-md-6 mb-2">
-        <h3 class="h2">{{ page.pe-title }}</h3>
+        <h3>{{ page.pe-title }}</h3>
         <ul>
           {% assign expertise = site.data.pe.expertise | sort: 'weight' %}
           {% for item in expertise %}
