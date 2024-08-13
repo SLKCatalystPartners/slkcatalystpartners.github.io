@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             {% assign quotes = site.data.quotes.quotes | sort: 'weight' %}
             {% for item in quotes %}
-            <div class="col-6 col-md-3 mb-2">
+            <div class="col-6 col-md-6">
                 <p class="h4">{{ item.text }}</p>
             </div>
             {% endfor %}
