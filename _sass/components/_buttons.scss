@@ -27,11 +27,11 @@
 .arrow {
   &:after{
     content: "\27F6";
-    padding-left: 1em;
+    padding-left: 0.5em;
   }
   &:hover {
     &:after {
-      padding-left: 2em;
+      padding-left: 1em;
     }
   }
 }
