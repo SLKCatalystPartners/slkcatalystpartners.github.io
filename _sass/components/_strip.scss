@@ -57,12 +57,16 @@
 }
 
 .strip {
-  &.strip {
+  &.approach {
+    h2 {
+      text-align: center;
+    }
     .bi {
       font-size: 2rem;
       text-align: center;
       color: $primary-dark;
       margin: $grid-gutter-width auto;
+      display: block;
     }
     h4 {
       text-align: center;
