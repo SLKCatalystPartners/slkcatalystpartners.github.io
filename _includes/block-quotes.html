@@ -1,14 +1,12 @@
-<div class="strip about">
+<div class="strip quotes">
     <div class="container pt-6 pb-6 pb-md-10">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-                {% assign quotes = site.data.quotes.quotes | sort: 'weight' %}
-                {% for item in quotes %}
-                <div class="col-6 col-md-3 mb-2">
-                  <p>{{ item.text }}</p>
-                </div>
-                {% endfor %}
+            {% assign quotes = site.data.quotes.quotes | sort: 'weight' %}
+            {% for item in quotes %}
+            <div class="col-6 col-md-3 mb-2">
+                <p>{{ item.text }}</p>
             </div>
+            {% endfor %}
         </div>
     </div>
 </div>

@@ -1,14 +1,17 @@
-<div class="strip about">
+<div class="strip explanatory">
     <div class="container pt-6 pb-6 pb-md-10">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-                {% assign quotes = site.data.quotes.quotes | sort: 'weight' %}
-                {% for item in quotes %}
-                <div class="col-6 col-md-3 mb-2">
-                  <p>{{ item.text }}</p>
-                </div>
-                {% endfor %}
-            </div>
+        <div class="row justify-content-start">
+        <div class="col-12">
+            <h2 class="small-upper">{{ page.explanatory-title }}</h2>
+        </div>  
+        {% assign explanatory-approach = site.data.approach.steps | sort: 'order' %}
+        {% for item in explanatory-approach %}
+        <div class="col-6 col-md-3 mb-2">
+            <i class="bi {{ item.icon }}"></i>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.text }}</p>
+        </div>
+        {% endfor %}
         </div>
     </div>
 </div>

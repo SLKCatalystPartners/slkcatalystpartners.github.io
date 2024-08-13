@@ -17,7 +17,7 @@ bodyClass: "page-home"
 </div>
 
 <div class="strip link-hook">
-  <div class="container pt-6 pb-6 pb-md-10">
+  <div class="container pt-4 pb-4 pt-md-4 pb-md-10">
     <div class="row justify-content-start">
       <div class="col-12">
         <h2 class="small-upper">{{ page.hook-title }}</h3>
@@ -45,22 +45,7 @@ bodyClass: "page-home"
 </div>
 {% include block-about.html %}
 {% include block-quotes.html %}
-<div class="strip explanatory">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      <div class="col-12">
-        <h2>{{ page.explanatory-title }}</h2>
-      </div>  
-      {% for item in explanatory-approach %}
-      <div class="col-6 col-md-3 mb-2">
-        <i class="bi {{ item.icon }}"></i>
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.text }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+{% include block-approach.html %}
 
 <script>
   const floatingBackground = document.getElementById('floatingBackground');
