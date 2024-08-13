@@ -1,6 +1,11 @@
 <div class="strip quotes">
     <div class="container pt-10 pb-10">
         <div class="row justify-content-center">
+            {% if page.quotes-title %}
+            <div class="col-12">
+                <h2 class="small-upper">{{ page.quotes-title }}</h2>
+            </div>  
+            {% endif %}
             {% assign quotes = site.data.quotes.quotes | sort: 'weight' %}
             {% for item in quotes %}
             <div class="col-12 col-md-6">
