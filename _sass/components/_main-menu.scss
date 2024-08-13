@@ -66,16 +66,15 @@
       margin: 0 auto;
       padding: 0;
       list-style: none;
-      display:block;
       > li {
         > a {
-          padding: $grid-gutter-width;
+          padding: 10px 15px;
           text-decoration: none;
           display: block;
           color: $primary;
           &:hover {
             color: $white;
-            background-color: darken($navy-blue,10%);
+            background-color: $emerald-green;
           }
           > strong {
             color: $white;
