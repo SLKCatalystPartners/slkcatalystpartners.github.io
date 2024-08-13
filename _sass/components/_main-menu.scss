@@ -66,6 +66,7 @@
       margin: 0 auto;
       padding: 0;
       list-style: none;
+      display:block;
       > li {
         > a {
           padding: $grid-gutter-width;
@@ -74,7 +75,7 @@
           color: $primary;
           &:hover {
             color: $white;
-            background-color: darken($emerald-green,10%);
+            background-color: darken($navy-blue,10%);
           }
           > strong {
             color: $white;
