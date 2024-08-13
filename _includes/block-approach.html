@@ -1,8 +1,8 @@
 <div class="strip-grey strip approach">
-    <div class="container pt-6 pb-6 pb-md-10">
+    <div class="container pt-4 pb-4 pt-md-12 pb-md-12 pt-lg-20 pb-lg-20">
         <div class="row justify-content-start">
             <div class="col-12">
-            {% if page.approach-title %}<h2 class="small-upper">{{ page.explanatory-title }}</h2>{% endif %}
+            {% if page.approach-title %}<h2 class="small-upper">{{ page.approach-title }}</h2>{% endif %}
             </div>  
             {% assign approach = site.data.approach.approach | sort: 'order' %}
             {% for item in approach %}
