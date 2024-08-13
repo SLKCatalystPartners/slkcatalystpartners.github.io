@@ -5,11 +5,11 @@
             <h2 class="small-upper">{{ page.explanatory-title }}</h2>
         </div>  
         {% assign explanatory-approach = site.data.approach.steps | sort: 'order' %}
-        {% for item in explanatory-approach %}
+        {% for step in explanatory-approach %}
         <div class="col-6 col-md-3 mb-2">
-            <i class="bi {{ item.icon }}"></i>
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.text }}</p>
+            <i class="bi {{ step.icon }}"></i>
+            <h4>{{ step.title }}</h4>
+            <p>{{ step.text }}</p>
         </div>
         {% endfor %}
         </div>
