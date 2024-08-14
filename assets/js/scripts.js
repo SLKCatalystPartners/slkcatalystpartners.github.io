@@ -39,31 +39,46 @@ function handleScroll() {
 
 window.addEventListener('scroll', debounce(handleScroll));
 
-// scroll
-
+// scroll to portion
 document.addEventListener("DOMContentLoaded", function() {
-    const offset = 120; // Adjust this value to the height of your fixed header or desired offset
-    const links = document.querySelectorAll(".scroll-link");
+    const offset = 140; // Adjust this value to the height of your fixed header or desired offset
   
+    function scrollWithOffset(targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - offset;
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  
+    // Check if there's an anchor in the URL
+    const anchor = window.location.hash;
+    if (anchor) {
+      const targetElement = document.querySelector(anchor);
+      if (targetElement) {
+        scrollWithOffset(targetElement);
+      }
+    }
+  
+    // Add event listeners for links that should scroll with offset
+    const links = document.querySelectorAll('a[href*="#"]');
     links.forEach(link => {
       link.addEventListener("click", function(event) {
-        event.preventDefault();
-  
-        const targetId = this.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-  
-        if (targetElement) {
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition = elementPosition - offset;
-  
-          window.scrollBy({
-            top: offsetPosition,
-            behavior: "smooth"
-          });
+        // Check if the link is pointing to an anchor on the same page
+        if (this.pathname === window.location.pathname) {
+          event.preventDefault();
+          const targetId = this.getAttribute("href").substring(this.getAttribute("href").indexOf("#"));
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            scrollWithOffset(targetElement);
+          }
         }
       });
     });
   });
+  
   
 // New Script Integration
 document.addEventListener('DOMContentLoaded', function() {
