@@ -27,25 +27,11 @@
   // Keyframe animations for sliding in and out
   @keyframes slideDown {
     from {
-      top: -100px;
+      top: -120px;
     }
     to {
       top: 0px;
     }
-  }
-
-  @keyframes slideUp {
-    from {
-      top: 0px;
-    }
-    to {
-      top: -100px;
-    }
-  }
-
-  // Apply the slide-up animation when the .scrolled class is removed after scroll
-  &:not(.scrolled) {
-    animation: slideUp 0.3s ease-in-out forwards;
   }
 }
 
