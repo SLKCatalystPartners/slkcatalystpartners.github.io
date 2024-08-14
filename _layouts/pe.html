@@ -11,7 +11,7 @@ bodyClass: "page-basic"
         </div>
     </div>
 </div>
-<div class="strip-secondary">
+<div class="strip-secondary intro-block">
     <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
         <div class="row justify-content-start">
             <div class="col-12">
@@ -20,7 +20,7 @@ bodyClass: "page-basic"
         </div>
         <div class="row justify-content-start">
             {% for item in page.intro-items %}
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 text-center">
                 <h4>{{ item.intro-item }}</h4>
                 <p>{{ item.description }}</p>
             </div>
@@ -28,6 +28,7 @@ bodyClass: "page-basic"
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
+                <hr/>
                 <p class="intro-block-text">{{ page.intro-block-text }}</p>
             </div>
         </div>

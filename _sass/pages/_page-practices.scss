@@ -44,7 +44,13 @@
 		border-bottom: 1px solid $white-offset;
 	}
 }
-
+.intro-block {
+	p {
+		color: $white;
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+}
 .intro-block-text {
 	font-size: 1.2em;
 	line-height: 1.5em;
