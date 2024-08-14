@@ -18,17 +18,18 @@ bodyClass: "page-basic"
                 <h3 class="small-upper text-center">{{ page.intro-block-header }}</h3>
             </div>
         </div>
-        <div class="row justify-content-start">
+        <hr/>
+        <div class="row justify-content-center">
             {% for item in page.intro-items %}
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-3 text-center">
                 <h4>{{ item.intro-item }}</h4>
                 <p>{{ item.description }}</p>
             </div>
             {% endfor %}
         </div>
+        <hr/>
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
-                <hr/>
                 <p class="intro-block-text">{{ page.intro-block-text }}</p>
             </div>
         </div>
