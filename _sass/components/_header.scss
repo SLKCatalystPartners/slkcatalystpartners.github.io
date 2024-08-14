@@ -8,23 +8,54 @@
   z-index: 999;
   border-bottom: 0px;
   position: relative;
+  transition: top 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  top: -100px; // Start the header off-screen
+
   &.scrolled {
     position: sticky;
     top: 0px;
     background: $white;
-    box-shadow: 0px 10px 10px rgba(0,0,0,.5)
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    animation: slideDown 0.3s ease-in-out forwards; // Slide in from the top
   }
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &.header-absolute {
     position: absolute;
     z-index: 10;
     width: 100%;
   }
+
+  // Keyframe animations for sliding in and out
+  @keyframes slideDown {
+    from {
+      top: -100px;
+    }
+    to {
+      top: 0px;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      top: 0px;
+    }
+    to {
+      top: -100px;
+    }
+  }
+
+  // Apply the slide-up animation when the .scrolled class is removed
+  &:not(.scrolled) {
+    animation: slideUp 0.3s ease-in-out forwards;
+  }
 }
+
 
 header.white {
   &.scrolled {
