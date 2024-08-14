@@ -8,6 +8,12 @@
   z-index: 999;
   border-bottom: 0px;
   position: relative;
+  &.scrolled {
+    position: sticky;
+    top: 0px;
+    background: $white;
+    box-shadow: 0px 10px 10px rgba(0,0,0,.5)
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -19,10 +25,11 @@
     width: 100%;
   }
 }
-.lock-scroll {
+
+.page-home {
   .header {
-    &.header-absolute {
-      position: static;
+    &.scrolled {
+      background-color: $secondary;
     }
   }
 }
