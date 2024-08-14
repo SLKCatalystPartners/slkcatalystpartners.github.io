@@ -5,46 +5,40 @@ bodyClass: "page-basic"
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
     <div class="row justify-content-start">
-        <h1 class="col-12 small-upper">{{page.title}}</h1>
-        <div class="col-12 col-md-8">
-            <p class="intro-block-text">{{ page.intro-block-text }}</p>
-        </div>
-        <div class="col-12 col-md-4 quicklinks-small">
-            <ul>
-              {% assign expertise = site.data.pe.expertise | sort: 'weight' %}
-              {% for item in expertise %}
-              <li><a class="arrow" href="{{absolute_url}}/{{item.url}}">{{ item.name }}</a></li>
-              {% endfor %}
-            </ul>
-        </div>
+        <h1 class="col-12 title text-center">{{page.title}}</h1>
+    </div>
+    <div class="row justify-content-start">
+        {% for item in page.intro-items %}
+        <h4 class="col-12 col-md-4">
+            {{ item.intro-item }}
+        </h4>
+        {% endfor %}
     </div>
 </div>
-<div class="strip-secondary strip approach">
+<div class="strip approach">
     <div class="container pt-10 pb-10">
-        <div class="row justify-content-start">
-            {% for item in page.intro-items %}
-            <h4 class="col-12 col-md-4">
-                {{ item.intro-item }}
-            </h4>
-            {% endfor %}
+        <div class="col-12 col-md-8">
+            <p class="intro-block-text">{{ page.intro-block-text }}</p>
         </div>
     </div>
 </div>
 
 
 {% for section in page.sections %}
-<h2 id="{{ section.id | replace: ' ', '-' }}">{{ section.section }}</h2>
 <div class="strip-secondary strip approach">
     <div class="container pt-10 pb-10">
+        <div class=""row">
+            <h2 id="{{ section.id | replace: ' ', '-' }}">{{ section.section }}</h2>
+        </div>
         <div class="row justify-content-start">
         {% for challenge in section.challenges %}
-            <h3>{{ challenge.challenge }}</h3>
+            <h4>{{ challenge.challenge }}</h4>
             <p>{{ challenge.description }}</p>
         {% endfor %}
         </div>
         <div class="row justify-content-start">
         {% for help in section.help %}
-            <h3>{{ help.area }}</h3>
+            <h4>{{ help.area }}</h4>
             <p>{{ help.description }}</p>
         {% endfor %}
         </div>

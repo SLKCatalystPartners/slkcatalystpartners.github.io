@@ -30,7 +30,7 @@
 		padding: 0;
 		margin: 0;
 		li {
-			font-size: 1em;
+			font-size: 1.2em;
 			margin: 0;
 			padding-top: $grid-gutter-width / 2;
 			padding-bottom: $grid-gutter-width / 2;
@@ -46,5 +46,6 @@
 }
 
 .intro-block-text {
-	font-size: 1.5em;
+	font-size: 1.2em;
+	line-height: 1.5em;
 }
