@@ -11,6 +11,7 @@ intro-items:
    - intro-item: "Value Accretion Plans deliver suboptimal execution outcomes because of divergence between in-flight strategy and investment thesis."
 sections:
    - section: "Developing a Value Accretion Plan"
+     id: "develop-plan"
      challenges:
         - challenge: "Limited Insight During Initial Phases"
           description: "In small to mid-size Private Equity (PE) transactions, firms often start with competitive bidding processes that rely on limited company data, leading to speculative strategies during the Indication of Interest (IOI) and Letter of Intent (LOI) stages."
@@ -24,6 +25,7 @@ sections:
         - area: "Strategic Alignment and Accountability"
           description: "Our approach ensures strategic alignment between the company’s demand and supply sides, with clear growth and profit trajectories to mitigate risks and enhance attractiveness for future exits."
    - section: "Accelerating Your Value Accretion Plan"
+     id: "accelerate-plan"
      challenges:
         - challenge: "Stagnating Growth During Hold Periods"
           description: "PE firms often face stagnation in portfolio companies due to market saturation, operational inefficiencies, and competitive pressures, threatening value accretion targets."
@@ -37,6 +39,7 @@ sections:
         - area: "Pre-Developed Strategic Plans for Future Buyers"
           description: "A well-defined strategy from SLK Catalyst Partners can make portfolio companies more attractive to future buyers by reducing the need for strategic rework, thus simplifying the sale process and enhancing value accretion."
    - section: "A Roadmap to Project Future Potential Value"
+     id: "design-next-phase"
      challenges:
         - challenge: "Unrealistic Outsourced Exit Projections"
           description: "Sponsors typically outsource the marketing effort to investment bankers, who focus on boilerplate marketing material with minimal input from the management team on current business."
