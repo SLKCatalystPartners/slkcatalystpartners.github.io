@@ -68,5 +68,7 @@ header.white {
     &.header-absolute {
       position: static;
     }
+    background: transparent;
+    box-shadow: none;
   }
 }
