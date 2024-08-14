@@ -1,3 +1,19 @@
+// Helper function to debounce scroll events
+function debounce(func, wait = 10, immediate = true) {
+    let timeout;
+    return function() {
+        const context = this, args = arguments;
+        const later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+}
+
 // Existing Code
 var body = document.querySelector('body');
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
@@ -10,7 +26,7 @@ menuTrigger.onclick = function() {
     body.classList.toggle('lock-scroll');
 };
 
-window.addEventListener('scroll', function() {
+function handleScroll() {
     targetDivs.forEach(function(targetDiv) {
         var scrollDistance = targetDiv.getAttribute('data-scroll-distance');
         if (window.scrollY > scrollDistance) {
@@ -19,8 +35,9 @@ window.addEventListener('scroll', function() {
             targetDiv.classList.remove('scrolled');
         }
     });
-});
+}
 
+window.addEventListener('scroll', debounce(handleScroll));
 // New Script Integration
 document.addEventListener('DOMContentLoaded', function() {
     const floatingBackground = document.getElementById('floatingBackground');
