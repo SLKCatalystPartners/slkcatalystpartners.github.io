@@ -84,8 +84,10 @@ bodyClass: "page-basic"
         <hr/>
         {% for help in section.help %}
         <div class="row justify-content-start">
-            <div class="col-12 col-md-8">
+            <div class="col-4">
                 <i class="bi {{ help.icon }}"></i>
+            </div>
+            <div class="col-12 col-md-8">
                 <h4>{{ help.area }}</h4>
                 <p class="large">{{ help.description }}</p>
             </div>
