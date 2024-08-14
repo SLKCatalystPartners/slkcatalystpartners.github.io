@@ -13,7 +13,7 @@
               <ul>
                 {% for subitem in submenu_data %}
                   <li>
-                    <a href="{{ subitem.url | relative_url }}">
+                    <a class="scroll-link" href="{{ subitem.url | relative_url }}">
                       <strong>{{ subitem.name }}</strong>
                       <span>{{ subitem.description }}</span>
                     </a>

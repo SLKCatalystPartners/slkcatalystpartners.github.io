@@ -13,12 +13,12 @@ bodyClass: "page-basic"
         </div>
         <div class="col-12 text-center quicklinks">
             <ul>
-                <li><a class="arrow" href="#overview">Overview</a></li>
+                <li><a class="arrow scroll-link" href="#overview">Overview</a></li>
                 {% assign expertise = site.data.pe.expertise | sort: 'weight' %}
                 {% for item in expertise %}
-                <li><a class="arrow" href="{{absolute_url}}/{{item.url}}">{{ item.name }}</a></li>
+                <li><a class="arrow scroll-link" href="{{absolute_url}}/{{item.url}}">{{ item.name }}</a></li>
                 {% endfor %}
-                <li><a class="arrow" href="#how-we-work">How We Work</a></li>
+                <li><a class="arrow scroll-link" href="#how-we-work">How We Work</a></li>
             </ul>
         </div>
     </div>

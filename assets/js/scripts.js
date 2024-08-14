@@ -39,6 +39,32 @@ function handleScroll() {
 
 window.addEventListener('scroll', debounce(handleScroll));
 
+// scroll
+
+document.addEventListener("DOMContentLoaded", function() {
+    const offset = 120; // Adjust this value to the height of your fixed header or desired offset
+    const links = document.querySelectorAll(".scroll-link");
+  
+    links.forEach(link => {
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+  
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+  
+        if (targetElement) {
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition - offset;
+  
+          window.scrollBy({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  });
+  
 // New Script Integration
 document.addEventListener('DOMContentLoaded', function() {
     const floatingBackground = document.getElementById('floatingBackground');
