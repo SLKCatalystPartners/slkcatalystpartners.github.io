@@ -95,8 +95,14 @@
 .section-header {
   background: $white;
   position: sticky;
-  top: 80px;
+  top: -20px;
   @include media-breakpoint-up(md) {
-    top: 140px;
+    top: 10px;
+  }
+  h2 {
+    margin-bottom: $grid-gutter-width / 2;
+    @include media-breakpoint-up(md) {
+      margin-bottom: $grid-gutter-width;
+    }
   }
 }
