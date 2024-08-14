@@ -8,7 +8,6 @@
   z-index: 999;
   border-bottom: 0px;
   position: relative;
-  transition: top 0.3s ease-in-out, background 0.3s ease-in-out;
   &.scrolled {
     position: sticky;
     top: 0px;
