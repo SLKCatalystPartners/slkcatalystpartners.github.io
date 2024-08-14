@@ -109,8 +109,6 @@
 }
 
 p.large {
-  font-size: 1.2em;
-  line-height: 1.4em;
   @include media-breakpoint-up(md) {
     font-size: 1.5em;
     line-height: 1.7em;

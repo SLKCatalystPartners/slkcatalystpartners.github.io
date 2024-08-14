@@ -69,9 +69,13 @@ bodyClass: "practice"
         <div class="row justify-content-center challenges">
             {% for challenge in section.challenges %}
             <div class="col-12 col-md-4">
-                <i class="bi {{ challenge.icon }}"></i>
-                <h4>{{ challenge.challenge }}</h4>
-                <p>{{ challenge.description }}</p>
+                <div class="col-2 col-md-12">
+                    <i class="bi {{ challenge.icon }}"></i>
+                </div>
+                <div class="col-10">
+                    <h4>{{ challenge.challenge }}</h4>
+                    <p>{{ challenge.description }}</p>
+                </div> 
             </div>
             {% endfor %}
         </div>
@@ -87,7 +91,7 @@ bodyClass: "practice"
             <div class="col-2">
                 <i class="bi {{ help.icon }}"></i>
             </div>
-            <div class="col-12 col-md-10">
+            <div class="col-10">
                 <h4>{{ help.area }}</h4>
                 <p class="large">{{ help.description }}</p>
             </div>
