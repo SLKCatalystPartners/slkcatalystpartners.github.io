@@ -1,0 +1,105 @@
+---
+layout: default
+bodyClass: "approach"
+---
+
+<div class="intro container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+        <div class="col-12 text-center">
+            <h1 class="title">{{page.title}}</h1>
+        </div>
+        <div class="col-12 text-center">
+            <h2 class="h4">{{ page.subtitle }}</h2>
+        </div>
+        <div class="col-12 text-center quicklinks">
+            <ul>
+                <li><a class="arrow scroll-link" href="#overview">Overview</a></li>
+                {% assign sections = page.framework-sections %}
+                {% for section in sections %}
+                <li><a class="arrow scroll-link" href="#{{ section.id }}">{{ section.section }}</a></li>
+                {% endfor %}
+                <li><a class="arrow scroll-link" href="#how-we-work">How We Work</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="strip-secondary intro-block">
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+        <div class="row justify-content-start">
+            <div class="col-12">
+                <p class="lead">{{ page.hook-block[0] }}</p>
+                <p class="lead">{{ page.hook-block[1] }}</p>
+                <p class="lead">{{ page.hook-block[2] }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% for section in page.framework-sections %}
+<div class="section-header">
+    <div class="container pt-10">
+        <div class="row justify-content-start">
+            <h2 id="{{ section.id }}" class="h3">{{ section.section }}</h2>
+        </div>
+    </div>
+</div>
+<div class="strip approach">
+    <div class="container pb-10">
+        <div class="row justify-content-start">
+            <div class="col-12">
+                <h3 class="small-upper">The Challenge</h3>
+            </div>
+        </div>
+        <hr/>
+        <div class="row justify-content-center challenges">
+            {% for challenge in section.challenges %}
+            <div class="col-12 col-md-4">
+                <div class="row">
+                    <div class="col-2 col-md-12">
+                        <i class="bi {{ challenge.icon }}"></i>
+                    </div>
+                    <div class="col-10 col-md-12">
+                        <p>{{ challenge.description }}</p>
+                    </div> 
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <hr />
+        <div class="row justify-content-start">
+            <div class="col-12">
+                <h3 class="small-upper">The Solution</h3>
+            </div>
+        </div>
+        <hr/>
+        {% for solution in section.solution %}
+        <div class="row justify-content-start solution-areas">
+            <div class="col-2">
+                <i class="bi {{ solution.icon }}"></i>
+            </div>
+            <div class="col-10">
+                <p class="large">{{ solution.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+        <hr />
+        <div class="row justify-content-start">
+            <div class="col-12">
+                <h3 class="small-upper">Frameworks</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center frameworks">
+            <div class="col-12">
+                <ul>
+                    {% for framework in section.frameworks %}
+                    <li>{{ framework }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <hr />
+    </div>
+</div>
+{% endfor %}
+{% include block-approach.html %}
