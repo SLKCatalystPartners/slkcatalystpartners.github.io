@@ -5,12 +5,11 @@ bodyClass: "page-basic"
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
     <div class="row justify-content-start">
-        <h1 class="col-12 title">{{page.title}}</h1>
-        <div class="col-12 col-md-6 order-2">
-            {{ page.intro-block-text }}
+        <h1 class="col-12 small-upper">{{page.title}}</h1>
+        <div class="col-12 col-md-8">
+            <p class="intro-block-text">{{ page.intro-block-text }}</p>
         </div>
-        <div class="col-12 col-md-6 quicklinks">
-            <h3 class="small-upper">{{ page.links-title }}</h3>
+        <div class="col-12 col-md-4 quicklinks-small">
             <ul>
               {% assign expertise = site.data.pe.expertise | sort: 'weight' %}
               {% for item in expertise %}
@@ -24,9 +23,9 @@ bodyClass: "page-basic"
     <div class="container pt-10 pb-10">
         <div class="row justify-content-start">
             {% for item in page.intro-items %}
-            <div class="col-12 col-md-4">
+            <h4 class="col-12 col-md-4">
                 {{ item.intro-item }}
-            </div>
+            </h4>
             {% endfor %}
         </div>
     </div>
