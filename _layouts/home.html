@@ -36,7 +36,7 @@ bodyClass: "page-home"
         <ul>
           {% assign expertise = site.data.pe.expertise | sort: 'weight' %}
           {% for item in expertise %}
-          <li><a class="arrow" href="{{absolute_url}}/{{item.url}}">{{ item.name }}</a></li>
+          <li><a class="arrow" href="{{ item.url | absolute_url }}">{{ item.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
