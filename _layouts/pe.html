@@ -1,0 +1,47 @@
+---
+layout: default
+bodyClass: "page-basic"
+---
+
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+        <h1 class="col-12 title">{{page.title}}</h1>
+        <div class="col-12 col-md-6 order-2">
+            {{ page.intro-block-text }}
+        </div>
+        <div class="col-12 col-md-6 order-1 quicklinks">
+            <h3>{{ page.links-title }}</h3>
+            <ul>
+              {% assign expertise = site.data.pe.expertise | sort: 'weight' %}
+              {% for item in expertise %}
+              <li><a class="arrow" href="{{absolute_url}}/{{item.url}}">{{ item.name }}</a></li>
+              {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="strip-grey strip approach">
+    <div class="container pt-10 pb-10">
+        <div class="row justify-content-start">
+            {% for item in page.intro-items %}
+            <div class="col-12 col-md-3">
+                {{ item.intro-item }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% for section in page.sections %}
+    <h2 id="{{ section.section | replace: ' ', '-' }}">{{ section.section }}</h2>
+    
+    {% for challenge in section.challenges %}
+        <h3>{{ challenge.challenge }}</h3>
+        <p>{{ challenge.description }}</p>
+    {% endfor %}
+    
+    {% for help in section.help %}
+        <h3>{{ help.area }}</h3>
+        <p>{{ help.description }}</p>
+    {% endfor %}
+{% endfor %}
