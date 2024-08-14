@@ -14,7 +14,7 @@
 		color: #fff;
 		display: flex;
 		align-items: center;
-		min-height: 550px;
+		min-height: 620px;
 		padding-top: 0px;
 		h1, p {
 			color: #fff;
@@ -33,7 +33,7 @@
 		z-index: 0;
 		overflow: hidden;
 		z-index: 0.1;
-		min-height: 550px;
+		min-height: 700px;
 	}
 	.floating-circle {
 		position: absolute;
@@ -51,7 +51,7 @@
 		left: 0;
 		width: 100%;
 		height: calc(100vh - 80px);
-		min-height: 550px;
+		min-height: 700px;
 		z-index: 0.5;
 	}
 }
