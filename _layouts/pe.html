@@ -51,10 +51,10 @@ bodyClass: "practice"
 
 
 {% for section in page.sections %}
-<div id="{{ section.id | replace: ' ', '-' }}" class="section-header">
+<div class="section-header">
     <div class="container pt-10">
         <div class="row justify-content-start">
-            <h2 class="h3">{{ section.section }}</h2>
+            <h2 id="{{ section.id | replace: ' ', '-' }}" class="h3">{{ section.section }}</h2>
         </div>
     </div>
 </div>
