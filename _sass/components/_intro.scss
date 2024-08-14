@@ -32,10 +32,7 @@
     color: $steel;
   }
   p, a {
-    font-size: 18px;
-    @include media-breakpoint-up(md) {
-      font-size: 20px;
-    }
+    font-size: 1.5em;
   }
   a {
     font-weight: bold
