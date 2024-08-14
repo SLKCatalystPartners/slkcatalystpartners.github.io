@@ -76,4 +76,12 @@ sections:
         - area: "Coaching the Management Team"
           description: "Our approach increases the likelihood of attracting higher bids and also ensures that the management team is fully engaged throughout the sale process."
           icon: "bi-pencil"
+workprocess-title: "How We Work"
+workprocess:
+  - section: 1
+    description: We work with the company management to understand the story line for the hold cycle. 
+  - section: 2
+    description: We then work with the company management to craft growth scenarios drawing from a rich portfolio of intellectually rigorous and road-tested frameworks to develop strategic roadmaps pertaining to some combination of innovation and growth strategy, efficiency enhancement, technology strategy, market-based strategy, and overall business strategy. 
+  - section: 3
+    description: "This will culminate in two deliverables: <br/> (i) A tangible strategy roadmap, comprising a set of coordinated and clearly defined initiatives on the cost and demand sides, with recommended execution plans and timelines <br/> (ii) A communication package that enhances company management’s ability to credibly present to potential buyer groups."
 ---

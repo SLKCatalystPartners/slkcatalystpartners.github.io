@@ -104,3 +104,28 @@ bodyClass: "practice"
     </div>
 </div>
 {% endfor %}
+
+<div class="strip-grey how-we-work">
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+        <div class="row justify-content-start">
+            <div class="col-12">
+                <h2 id="how-we-work" class="small-upper text-center">{{ page.workprocess-title }}</h2>
+            </div>
+        </div>
+        <hr/>
+        <div class="row justify-content-center">
+            {% for item in page.workprocess %}
+            <div class="col-12 col-md-4 text-center">
+                <div class="row">
+                    <div class="col-2">
+                        <h4>{{ item.section }}</h4>
+                    </div>
+                    <div class="col-10">
+                        <p>{{ item.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
