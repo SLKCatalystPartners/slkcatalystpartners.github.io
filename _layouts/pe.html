@@ -7,15 +7,17 @@ bodyClass: "page-basic"
     <div class="row justify-content-start">
         <div class="col-12">
             <h1 class="title text-center">{{page.title}}</h1>
-            <p>{{ page.subtitle }}</p>
+            <h4>{{ page.subtitle }}</h4>
         </div>
     </div>
+</div>
+<div class="strip-secondary">
     <div class="row justify-content-start">
         {% for item in page.intro-items %}
-        <h4 class="col-12 col-md-4">
-            {{ item.intro-item }}
-        </h4>
-        <p>{{ item.intro-item.description }}</p>
+        <div class="col-12 col-md-4">
+            <h4>{{ item.intro-item }}</h4>
+            <p>{{ item.intro-item.description }}</p>
+        </div>
         {% endfor %}
     </div>
 </div>
