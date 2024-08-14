@@ -91,3 +91,12 @@
     border-left: .25em solid $secondary;
   }
 }
+
+.section-header {
+  background: $white;
+  position: sticky;
+  top: 80px;
+  @include media-breakpoint-up(md) {
+    top: 140px;
+  }
+}
