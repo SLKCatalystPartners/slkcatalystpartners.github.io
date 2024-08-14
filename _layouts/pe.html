@@ -32,16 +32,23 @@ bodyClass: "page-basic"
     </div>
 </div>
 
+
 {% for section in page.sections %}
-    <h2 id="{{ section.id | replace: ' ', '-' }}">{{ section.section }}</h2>
-    
-    {% for challenge in section.challenges %}
-        <h3>{{ challenge.challenge }}</h3>
-        <p>{{ challenge.description }}</p>
-    {% endfor %}
-    
-    {% for help in section.help %}
-        <h3>{{ help.area }}</h3>
-        <p>{{ help.description }}</p>
-    {% endfor %}
+<h2 id="{{ section.id | replace: ' ', '-' }}">{{ section.section }}</h2>
+<div class="strip-secondary strip approach">
+    <div class="container pt-10 pb-10">
+        <div class="row justify-content-start">
+        {% for challenge in section.challenges %}
+            <h3>{{ challenge.challenge }}</h3>
+            <p>{{ challenge.description }}</p>
+        {% endfor %}
+        </div>
+        <div class="row justify-content-start">
+        {% for help in section.help %}
+            <h3>{{ help.area }}</h3>
+            <p>{{ help.description }}</p>
+        {% endfor %}
+        </div>
+    </div>
+</div>
 {% endfor %}
