@@ -46,3 +46,33 @@
   padding-top: 100px;
   padding-bottom: 30px;
 }
+
+
+.intro-block {
+	p {
+		color: $white;
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+	hr {
+		margin: $grid-gutter-width;
+	}
+	h3 {
+		color: $mustard-yellow;
+	}
+	.bi {
+		font-size: 2rem;
+		text-align: center;
+		color: $mustard-yellow;
+		margin: $grid-gutter-width auto;
+		display: block;
+	}
+  p.large {
+    font-size: 1.5em;
+  }
+}
+
+.intro-block-text {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
