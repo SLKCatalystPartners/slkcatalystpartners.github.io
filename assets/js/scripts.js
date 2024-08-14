@@ -2,7 +2,7 @@
 var body = document.querySelector('body');
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
 var menuContainer = document.querySelector('#main-menu-mobile');
-var targetDiv = document.querySelector('.your-div-class'); // Replace with your actual target div class or ID
+var targetDiv = document.querySelector('header.header'); // Select the header element
 
 menuTrigger.onclick = function() {
     menuContainer.classList.toggle('open');
