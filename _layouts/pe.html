@@ -61,21 +61,37 @@ bodyClass: "page-basic"
 <div class="strip">
     <div class="container pb-10">
         <div class="row justify-content-start">
-            <div class="col-12 col-md-6">
-            <h3 class=""small-upper>Challenges</h3>
-            {% for challenge in section.challenges %}
-                <h4>{{ challenge.challenge }}</h4>
-                <p>{{ challenge.description }}</p>
-            {% endfor %}
-            </div>
-            <div class="col-12 col-md-6">
-            <h3 class=""small-upper>How we can help</h3>
-            {% for help in section.help %}
-                <h4>{{ help.area }}</h4>
-                <p>{{ help.description }}</p>
-            {% endfor %}
+            <div class="col-12">
+                <h3 class="small-upper">Challenges</h3>
             </div>
         </div>
+        <hr/>
+        <div class="row justify-content-center">
+            {% for challenge in section.challenges %}
+            <div class="col-12 col-md-4">
+                <i class="bi {{ challenge.icon }}"></i>
+                <h4>{{ challenge.challenge }}</h4>
+                <p>{{ challenge.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <hr />
+        <div class="row justify-content-start">
+            <div class="col-12">
+                <h3 class="small-upper">How we can help</h3>
+            </div>
+        </div>
+        <hr/>
+        <div class="row justify-content-center">
+            {% for help in section.help %}
+            <div class="col-12 col-md-4">
+                <i class="bi {{ help.icon }}"></i>
+                <h4>{{ help.area }}</h4>
+                <p>{{ help.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <hr />
     </div>
 </div>
 {% endfor %}
