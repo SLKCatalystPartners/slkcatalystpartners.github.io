@@ -12,13 +12,15 @@ bodyClass: "page-basic"
     </div>
 </div>
 <div class="strip-secondary">
-    <div class="row justify-content-start">
-        {% for item in page.intro-items %}
-        <div class="col-12 col-md-4">
-            <h4>{{ item.intro-item }}</h4>
-            <p>{{ item.intro-item.description }}</p>
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+        <div class="row justify-content-start">
+            {% for item in page.intro-items %}
+            <div class="col-12 col-md-4">
+                <h4>{{ item.intro-item }}</h4>
+                <p>{{ item.description }}</p>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 <div class="strip approach">
