@@ -48,7 +48,10 @@
 .intro-block {
 	p {
 		color: $white;
-		font-size: 1.2em;
+    font-size: 1em;
+    @include media-breakpoint-up(md) {
+      font-size: 1.2em;
+    }
 		line-height: 1.5em;
 	}
 	hr {
@@ -65,7 +68,10 @@
 		display: block;
 	}
   p.large {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    @include media-breakpoint-up(md) {
+      font-size: 1.5em;
+    }
     margin-top: $grid-gutter-width;
   }
 }
