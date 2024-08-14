@@ -16,7 +16,7 @@ bodyClass: "practice"
                 <li><a class="arrow scroll-link" href="#overview">Overview</a></li>
                 {% assign expertise = site.data.pe.expertise | sort: 'weight' %}
                 {% for item in expertise %}
-                <li><a class="arrow scroll-link" href="{{ item.url | absolute_url }}">{{ item.name }}</a></li>
+                <li><a class="arrow scroll-link" href="{{ item.url | split: '#' | last }}">{{ item.name }}</a></li>
                 {% endfor %}
                 <li><a class="arrow scroll-link" href="#how-we-work">How We Work</a></li>
             </ul>
