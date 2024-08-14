@@ -153,3 +153,40 @@ document.addEventListener('DOMContentLoaded', function() {
         height = canvas.height = window.innerHeight;
 
         const scaleFactor = Math.max(0.5, Math.min(1, width / BASE_WIDTH));
+        const adjustedDotCount = Math.round(BASE_DOT_COUNT * scaleFactor);
+
+        dots = [];
+        for (let i = 0; i < adjustedDotCount; i++) {
+            dots.push(new Dot(Math.random() * width, Math.random() * height));
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+        time += 0.0005;
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].move();
+            dots[i].draw();
+            for (let j = i + 1; j < dots.length; j++) {
+                const dx = dots[i].x - dots[j].x;
+                const dy = dots[i].y - dots[j].y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < connectionDistance) {
+                    ctx.beginPath();
+                    ctx.moveTo(dots[i].x, dots[i].y);
+                    ctx.lineTo(dots[j].x, dots[j].y);
+                    ctx.strokeStyle = `rgba(255, 255, 255, ${0.2 * (1 - distance / connectionDistance)})`;
+                    ctx.stroke();
+                }
+            }
+        }
+        requestAnimationFrame(animate);
+    }
+
+    window.addEventListener('resize', () => {
+        init();
+        createFloatingCircles();
+    });
+    init();
+    animate();
+});
