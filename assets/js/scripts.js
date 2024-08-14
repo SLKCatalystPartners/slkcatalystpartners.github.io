@@ -14,7 +14,6 @@ function debounce(func, wait = 10, immediate = true) {
     };
 }
 
-// Initial variable declarations and DOM element selections
 var body = document.querySelector('body');
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
 var menuContainer = document.querySelector('#main-menu-mobile');
@@ -47,8 +46,9 @@ function handleScroll() {
     lastScrollY = currentScrollY;
 }
 
-// Attach the debounced scroll event listener
+// Debounce the scroll event listener to improve performance
 window.addEventListener('scroll', debounce(handleScroll));
+
 
 // Script for Home Page
 document.addEventListener('DOMContentLoaded', function() {
