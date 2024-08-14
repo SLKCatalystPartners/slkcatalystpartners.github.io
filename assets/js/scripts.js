@@ -2,7 +2,7 @@
 var body = document.querySelector('body');
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
 var menuContainer = document.querySelector('#main-menu-mobile');
-var targetDiv = document.querySelector('header.header'); // Select the header element
+var targetDivs = document.querySelectorAll('[data-scroll-distance]'); // Select all elements with data-scroll-distance
 
 menuTrigger.onclick = function() {
     menuContainer.classList.toggle('open');
@@ -11,11 +11,14 @@ menuTrigger.onclick = function() {
 };
 
 window.addEventListener('scroll', function() {
-    if (window.scrollY > 100) { // Change 100 to the desired scroll position
-        targetDiv.classList.add('scrolled');
-    } else {
-        targetDiv.classList.remove('scrolled');
-    }
+    targetDivs.forEach(function(targetDiv) {
+        var scrollDistance = targetDiv.getAttribute('data-scroll-distance');
+        if (window.scrollY > scrollDistance) {
+            targetDiv.classList.add('scrolled');
+        } else {
+            targetDiv.classList.remove('scrolled');
+        }
+    });
 });
 
 // New Script Integration
@@ -133,40 +136,3 @@ document.addEventListener('DOMContentLoaded', function() {
         height = canvas.height = window.innerHeight;
 
         const scaleFactor = Math.max(0.5, Math.min(1, width / BASE_WIDTH));
-        const adjustedDotCount = Math.round(BASE_DOT_COUNT * scaleFactor);
-
-        dots = [];
-        for (let i = 0; i < adjustedDotCount; i++) {
-            dots.push(new Dot(Math.random() * width, Math.random() * height));
-        }
-    }
-
-    function animate() {
-        ctx.clearRect(0, 0, width, height);
-        time += 0.0005;
-        for (let i = 0; i < dots.length; i++) {
-            dots[i].move();
-            dots[i].draw();
-            for (let j = i + 1; j < dots.length; j++) {
-                const dx = dots[i].x - dots[j].x;
-                const dy = dots[i].y - dots[j].y;
-                const distance = Math.sqrt(dx * dx + dy * dy);
-                if (distance < connectionDistance) {
-                    ctx.beginPath();
-                    ctx.moveTo(dots[i].x, dots[i].y);
-                    ctx.lineTo(dots[j].x, dots[j].y);
-                    ctx.strokeStyle = `rgba(255, 255, 255, ${0.2 * (1 - distance / connectionDistance)})`;
-                    ctx.stroke();
-                }
-            }
-        }
-        requestAnimationFrame(animate);
-    }
-
-    window.addEventListener('resize', () => {
-        init();
-        createFloatingCircles();
-    });
-    init();
-    animate();
-});

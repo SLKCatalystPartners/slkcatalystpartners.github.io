@@ -26,10 +26,16 @@
   }
 }
 
-.page-home {
+header.white {
+  &.scrolled {
+    background-color: $secondary;
+  }
+}
+
+.lock-scroll {
   .header {
-    &.scrolled {
-      background-color: $secondary;
+    &.header-absolute {
+      position: static;
     }
   }
 }
