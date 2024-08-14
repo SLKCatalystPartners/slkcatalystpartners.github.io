@@ -66,7 +66,7 @@ bodyClass: "page-basic"
             </div>
         </div>
         <hr/>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center challenges">
             {% for challenge in section.challenges %}
             <div class="col-12 col-md-4">
                 <i class="bi {{ challenge.icon }}"></i>
@@ -83,11 +83,11 @@ bodyClass: "page-basic"
         </div>
         <hr/>
         {% for help in section.help %}
-        <div class="row justify-content-start">
-            <div class="col-4">
+        <div class="row justify-content-start help-areas">
+            <div class="col-2">
                 <i class="bi {{ help.icon }}"></i>
             </div>
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-10">
                 <h4>{{ help.area }}</h4>
                 <p class="large">{{ help.description }}</p>
             </div>

@@ -107,3 +107,28 @@
     }
   }
 }
+
+p.large {
+  font-size: 1.2em;
+  @include media-breakpoint-up(md) {
+    font-size: 1.5em;
+  }
+}
+
+.help-areas {
+  .bi {
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    margin: $grid-gutter auto;
+  }
+}
+
+.challenges {
+  .bi {
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    margin: $grid-gutter auto;
+  }
+}
