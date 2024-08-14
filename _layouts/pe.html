@@ -7,7 +7,7 @@ bodyClass: "page-basic"
     <div class="row justify-content-start">
         <div class="col-12 text-center">
             <h1 class="title">{{page.title}}</h1>
-            <h4>{{ page.subtitle }}</h4>
+            <h2 class="h3">{{ page.subtitle }}</h2>
         </div>
     </div>
 </div>
@@ -15,14 +15,14 @@ bodyClass: "page-basic"
     <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
         <div class="row justify-content-start">
             <div class="col-12">
-                <h3 class="small-upper text-center">{{ page.intro-block-header }}</h3>
+                <h2 class="small-upper text-center">{{ page.intro-block-header }}</h2>
             </div>
         </div>
         <hr/>
         <div class="row justify-content-center">
             {% for item in page.intro-items %}
             <div class="col-12 col-md-3 text-center">
-                <h4>{{ item.intro-item }}</h4>
+                <h3>{{ item.intro-item }}</h3>
                 <p>{{ item.description }}</p>
             </div>
             {% endfor %}
