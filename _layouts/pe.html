@@ -10,7 +10,7 @@ bodyClass: "page-basic"
             {{ page.intro-block-text }}
         </div>
         <div class="col-12 col-md-6 quicklinks">
-            <h3>{{ page.links-title }}</h3>
+            <h3 class="small-upper">{{ page.links-title }}</h3>
             <ul>
               {% assign expertise = site.data.pe.expertise | sort: 'weight' %}
               {% for item in expertise %}
