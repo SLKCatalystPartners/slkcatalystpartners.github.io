@@ -53,6 +53,16 @@
 	hr {
 		margin: $grid-gutter-width;
 	}
+	h3 {
+		color: $marigold
+	}
+	.bi {
+		font-size: 2rem;
+		text-align: center;
+		color: $mustard-yellow;
+		margin: $grid-gutter-width auto;
+		display: block;
+	}
 }
 
 .intro-block-text {
