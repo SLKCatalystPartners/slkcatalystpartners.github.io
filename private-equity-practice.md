@@ -15,9 +15,9 @@ intro-items:
     description: "Value Accretion Plans deliver suboptimal execution outcomes because of divergence between in-flight strategy and investment thesis."
     icon: "bi-sign-turn-right"
 intro-block-header: "Private Equity Overview"
-intro-block-text: "In Private Equity (PE) firm acquisitions, limited pre-acquisition access to company data and personnel often renders even the most carefully crafted investment theses a theoretical exercise. Post-LOI, the fast-paced due diligence process forces PE teams to focus on immediate value maximization, sidelining strategic alignment and leading to suboptimal value creation plans. 
+intro-block-text: "In Private Equity (PE) firm acquisitions, limited pre-acquisition access to company data and personnel often renders even the most carefully crafted investment theses a theoretical exercise. Post-LOI, the fast-paced due diligence process forces PE teams to focus on immediate value maximization, <strong>sidelining strategic alignment and leading to suboptimal value creation plans. </strong>
 <br><br>
-Compounding this challenge are volatile market dynamics, such as rising interest rates and fluctuating deal activity, which pressure traditional value levers and force constant strategy recalibration. This reactive approach undermines the PE firm’s ability to balance short-term pressures with long-term objectives, jeopardizing anticipated returns and overall value creation."    
+Compounding this challenge are volatile market dynamics, such as rising interest rates and fluctuating deal activity, which pressure traditional value levers and force constant strategy recalibration. <strong>This reactive approach undermines the PE firm’s ability to balance short-term pressures with long-term objectives, jeopardizing anticipated returns and overall value creation.</strong>"    
 sections:
    - section: "Developing a Value Accretion Plan"
      id: "develop-plan"
