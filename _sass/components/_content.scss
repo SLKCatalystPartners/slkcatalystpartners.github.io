@@ -120,7 +120,7 @@ p.large {
     font-size: 2em;
     text-align: center;
     display: block;
-    margin: $grid-gutter auto;
+    margin: $grid-gutter-width auto;
   }
 }
 
@@ -129,6 +129,6 @@ p.large {
     font-size: 2em;
     text-align: center;
     display: block;
-    margin: $grid-gutter auto;
+    margin: $grid-gutter-width auto;
   }
 }
