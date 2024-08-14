@@ -50,7 +50,7 @@
     }
   }
 
-  // Apply the slide-up animation when the .scrolled class is removed
+  // Apply the slide-up animation only when the .scrolled class is removed after scroll event
   &:not(.scrolled) {
     animation: slideUp 0.3s ease-in-out forwards;
   }

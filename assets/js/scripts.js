@@ -38,7 +38,7 @@ function handleScroll() {
 
         if (scrollingUp && currentScrollY > scrollDistance + targetHeight) {
             targetDiv.classList.add('scrolled');
-        } else {
+        } else if (currentScrollY > scrollDistance + targetHeight) {
             targetDiv.classList.remove('scrolled');
         }
     });
@@ -49,6 +49,10 @@ function handleScroll() {
 // Debounce the scroll event listener to improve performance
 window.addEventListener('scroll', debounce(handleScroll));
 
+// Make sure the header is visible on page load
+targetDivs.forEach(function(targetDiv) {
+    targetDiv.classList.add('scrolled');
+});
 
 // Script for Home Page
 document.addEventListener('DOMContentLoaded', function() {
