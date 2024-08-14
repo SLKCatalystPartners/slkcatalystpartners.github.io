@@ -110,25 +110,9 @@
 
 p.large {
   font-size: 1.2em;
+  line-height: 1.4em;
   @include media-breakpoint-up(md) {
     font-size: 1.5em;
-  }
-}
-
-.help-areas {
-  .bi {
-    font-size: 2em;
-    text-align: center;
-    display: block;
-    margin: $grid-gutter-width auto;
-  }
-}
-
-.challenges {
-  .bi {
-    font-size: 2em;
-    text-align: center;
-    display: block;
-    margin: $grid-gutter-width auto;
+    line-height: 1.7em;
   }
 }
