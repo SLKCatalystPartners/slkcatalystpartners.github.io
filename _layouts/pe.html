@@ -113,19 +113,17 @@ bodyClass: "practice"
             </div>
         </div>
         <hr/>
-        <div class="row justify-content-center">
-            {% for item in page.workprocess %}
-            <div class="col-12 col-md-4 text-center">
-                <div class="row">
-                    <div class="col-2">
-                        <h4>{{ item.section }}</h4>
-                    </div>
-                    <div class="col-10">
-                        <p>{{ item.description }}</p>
-                    </div>
-                </div>
+        {% for item in page.workprocess %}
+        <div class="row">
+            <div class="col-2">
+                <h4>{{ item.section }}</h4>
             </div>
-            {% endfor %}
+            <div class="col-10">
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+        <hr/>
+        {% endfor %}
         </div>
     </div>
 </div>
