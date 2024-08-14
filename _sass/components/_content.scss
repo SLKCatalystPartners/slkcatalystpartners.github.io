@@ -96,6 +96,7 @@
   background: $white;
   position: sticky;
   top: -20px;
+  z-index: 90;
   @include media-breakpoint-up(md) {
     top: 10px;
   }
