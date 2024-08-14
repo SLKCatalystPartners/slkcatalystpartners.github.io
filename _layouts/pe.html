@@ -14,6 +14,11 @@ bodyClass: "page-basic"
 <div class="strip-secondary">
     <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
         <div class="row justify-content-start">
+            <div class="col-12">
+                <h3 class="small-upper text-center">{{ page.intro-block-header }}</h3>
+            </div>
+        </div>
+        <div class="row justify-content-start">
             {% for item in page.intro-items %}
             <div class="col-12 col-md-4">
                 <h4>{{ item.intro-item }}</h4>
@@ -21,12 +26,10 @@ bodyClass: "page-basic"
             </div>
             {% endfor %}
         </div>
-    </div>
-</div>
-<div class="strip approach">
-    <div class="container pt-10 pb-10">
-        <div class="col-12 col-md-8">
-            <p class="intro-block-text">{{ page.intro-block-text }}</p>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <p class="intro-block-text">{{ page.intro-block-text }}</p>
+            </div>
         </div>
     </div>
 </div>
