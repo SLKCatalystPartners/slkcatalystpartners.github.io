@@ -14,47 +14,32 @@ function debounce(func, wait = 10, immediate = true) {
     };
 }
 
+// Existing Code
 var body = document.querySelector('body');
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
 var menuContainer = document.querySelector('#main-menu-mobile');
 var targetDivs = document.querySelectorAll('[data-scroll-distance]'); // Select all elements with data-scroll-distance
-var lastScrollY = window.scrollY;
 
-// Function to handle menu toggle functionality
 menuTrigger.onclick = function() {
     menuContainer.classList.toggle('open');
     menuTrigger.classList.toggle('is-active');
     body.classList.toggle('lock-scroll');
 };
 
-// Function to handle scroll behavior
 function handleScroll() {
-    const currentScrollY = window.scrollY;
-    const scrollingUp = currentScrollY < lastScrollY;
-
     targetDivs.forEach(function(targetDiv) {
-        var scrollDistance = parseInt(targetDiv.getAttribute('data-scroll-distance'), 10);
-        var targetHeight = targetDiv.offsetHeight;
-
-        if (scrollingUp && currentScrollY > scrollDistance + targetHeight) {
+        var scrollDistance = targetDiv.getAttribute('data-scroll-distance');
+        if (window.scrollY > scrollDistance) {
             targetDiv.classList.add('scrolled');
-        } else if (currentScrollY > scrollDistance + targetHeight) {
+        } else {
             targetDiv.classList.remove('scrolled');
         }
     });
-
-    lastScrollY = currentScrollY;
 }
 
-// Debounce the scroll event listener to improve performance
 window.addEventListener('scroll', debounce(handleScroll));
 
-// Make sure the header is visible on page load
-targetDivs.forEach(function(targetDiv) {
-    targetDiv.classList.add('scrolled');
-});
-
-// Script for Home Page
+// New Script Integration
 document.addEventListener('DOMContentLoaded', function() {
     const floatingBackground = document.getElementById('floatingBackground');
     const colorsCircles = ['#3a2849', '#334f4e', '#235958', '#24228c', '#006548'];
