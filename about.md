@@ -11,8 +11,8 @@ mission-block: "Our mission is to empower businesses by transforming complex cha
 team-block: "Our team comprises industry experts with a wealth of experience across multiple sectors. We are committed to delivering actionable insights and strategic guidance that drive real, measurable results."
 
 slk-block: 
-    title: "Operationalizing Strategy with SLKone"
-    description: "SLKone is focused on bridging the gap between strategy and execution. They specialize in taking the strategic frameworks and innovative solutions developed by SLK Catalyst Partners and turning them into actionable, operational plans. With expertise in various industries, SLKone steps in to provide support where it’s needed, whether through hands-on execution or targeted interventions to overcome specific operational challenges. This partnership ensures that clients not only receive top-tier strategic guidance but also have the resources and expertise to see these strategies through to successful implementation."
+    title: "A strategy implementation team at the ready"
+    description: "We stand ready with our highly experienced, talented consulting team - SLKone - to program manage and provide surge capacity where you need assistance to help you implement your strategy. SLKone is focused on bridging the gap between strategy and execution. Our implementation team specializes in taking the strategic frameworks and innovative solutions developed by SLK Catalyst Partners and turning them into actionable, operational plans. With expertise in various industries, SLKone steps in to provide support where it’s needed, whether through hands-on execution or targeted interventions to overcome specific operational challenges. This partnership ensures that clients not only receive top-tier strategic guidance but also have the resources and expertise to see these strategies through to successful implementation."
     link-text: Learn More About SLKone
 
 ---
