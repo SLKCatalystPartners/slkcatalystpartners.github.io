@@ -1,5 +1,5 @@
 ---
-title: How we can help Corporate Operators
+title: How SLK Catalyst Partners Helps Corporates and Operating Entities
 subtitle: Empowering Leadership with Structured Solutions for Complex Challenges
 layout: approach
 description: SLK Catalyst Partners offers structured frameworks to drive innovation, boost efficiency, integrate advanced technology, align with market demands, and achieve strategic clarity.

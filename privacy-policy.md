@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy
+title: SLK Catalyst Partners Privacy Policy
 layout: page
 description: Privacy Policy
 bodyClass: page-policy

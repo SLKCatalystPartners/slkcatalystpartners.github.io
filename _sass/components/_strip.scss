@@ -59,6 +59,11 @@
   background-size: cover;
 }
 
+.strip-bg-only {
+  background-size: cover;
+  min-height: 80vh;
+}
+
 .strip {
   &.approach {
     h2 {

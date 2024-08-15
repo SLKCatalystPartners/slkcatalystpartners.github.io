@@ -1,5 +1,5 @@
 ---
-title: How we can help Private Equity Sponsors
+title: How SLK Catalyst Partners Helps Private Equity Sponsors
 subtitle: Aligning Strategy and Execution in Private Equity for Sustained Value Creation
 layout: pe
 description: SLK Catalyst Partners offers expert consulting for Private Equity firms and portfolio companies. Our 32 specialized toolkits drive innovation, efficiency, and growth. Maximize your PE investments with our strategic solutions.

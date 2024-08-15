@@ -1,5 +1,5 @@
 ---
-title: About Us
+title: About SLK Catalyst Partners
 subtitle: Empowering Businesses through Strategic Innovation and Expertise
 layout: teams
 description: Learn more about SLK Catalyst Partners, our mission, and the team of seasoned professionals driving innovation and crafting business strategies for diverse industries.
@@ -15,4 +15,5 @@ slk-block:
     description: "We stand ready with our highly experienced, talented consulting team - SLKone - to program manage and provide surge capacity where you need assistance to help you implement your strategy. SLKone is focused on bridging the gap between strategy and execution. Our implementation team specializes in taking the strategic frameworks and innovative solutions developed by SLK Catalyst Partners and turning them into actionable, operational plans. With expertise in various industries, SLKone steps in to provide support where it’s needed, whether through hands-on execution or targeted interventions to overcome specific operational challenges. This partnership ensures that clients not only receive top-tier strategic guidance but also have the resources and expertise to see these strategies through to successful implementation."
     link-text: Learn More About SLKone
 
+team-image: "images/team/team-2024.jpg"
 ---
