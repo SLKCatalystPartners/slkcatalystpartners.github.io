@@ -1,7 +1,7 @@
 ---
 title: Approach
 subtitle: Empowering Leadership with Structured Solutions for Complex Challenges
-layout: default
+layout: approach
 description: SLK Catalyst Partners offers structured frameworks to drive innovation, boost efficiency, integrate advanced technology, align with market demands, and achieve strategic clarity.
 bodyClass: page-approach
 
@@ -122,5 +122,4 @@ framework-sections:
         description: "Aligns digital marketing efforts with overall business strategy."
       - name: "Integrating AI into Strategy Development"
         description: "Enhances strategic decision-making with AI integration."
-
 ---
