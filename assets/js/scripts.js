@@ -138,11 +138,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function debounce(func, wait = 200) {
+        let timeout;
+        return function() {
+            const context = this, args = arguments;
+            const later = function() {
+                timeout = null;
+                func.apply(context, args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+
     createFloatingCircles();
-    window.addEventListener('resize', () => {
+
+    window.addEventListener('resize', debounce(() => {
         floatingBackground.innerHTML = '';
         createFloatingCircles();
-    });
+    }));
 
     // Node network code
     const canvas = document.getElementById('backgroundCanvas');
@@ -238,10 +252,10 @@ document.addEventListener('DOMContentLoaded', function() {
         requestAnimationFrame(animate);
     }
 
-    window.addEventListener('resize', () => {
+    window.addEventListener('resize', debounce(() => {
         init();
-        createFloatingCircles();
-    });
+    }));
+
     init();
     animate();
 });
