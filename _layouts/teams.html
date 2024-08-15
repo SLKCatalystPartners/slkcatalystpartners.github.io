@@ -8,13 +8,10 @@ bodyClass: "page-teams"
         <div class="col-12 text-center">
             <h1 class="title">{{page.title}}</h1>
         </div>
-        <div class="col-12 text-center">
-            <h2 class="h4">{{ page.subtitle }}</h2>
-        </div>
     </div>
 </div>
 
-<div class="strip-secondary intro-block">
+<div class="strip intro-block">
     <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
         <div class="row justify-content-start">
             <div class="col-12 col-md-6">
@@ -24,6 +21,7 @@ bodyClass: "page-teams"
                 <p class="large">{{ page.mission-block }}</p>
             </div>
         </div>
+        <hr/>
     </div>
 </div>
 
@@ -33,9 +31,8 @@ bodyClass: "page-teams"
             <h3 class="small-upper">SLK Catalyst Partners Principals</h3>
         </div>
         <div class="col-12">
-            <p>{{ page.team-block }}</p>
+            <p class="large">{{ page.team-block }}</p>
         </div>
-        <hr/>
         {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
         {% for team in promoted_teams %}
         <div class="col-12 col-md-6 mb-2">
