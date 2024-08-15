@@ -26,7 +26,7 @@ window.addEventListener('scroll', handleScroll);
 document.addEventListener("DOMContentLoaded", function() {
     // Define offsets for mobile and other breakpoints
     const mobileOffset = 80; // Adjust this value for mobile devices
-    const defaultOffset = 120; // Adjust this value for larger screens
+    const defaultOffset = -120; // Adjust this value for larger screens
     
     // Function to determine the offset based on screen width
     function getOffset() {
