@@ -13,12 +13,8 @@ hook-block:
 framework-sections:
   - section: "Navigate your overall business strategy"
     id: "overall-business-strategy"
-    challenges:
-      - title: "The Problem"
-        description: "Crafting a comprehensive business strategy requires a cohesive vision that aligns every aspect of the organization. Many companies struggle to articulate this vision and translate it into actionable strategies. Without clear direction and execution frameworks, businesses risk losing focus and failing to adapt to market dynamics."
-    solution:
-      - title: "The Solution"
-        description: "SLK Catalyst Partners provides a suite of frameworks designed to help businesses create and execute a cohesive strategic vision. We guide leaders in defining core values, setting ambitious goals, and developing comprehensive strategies that resonate across all levels of the organization. Our approach ensures that strategic planning is not just theoretical but is paired with practical, executable plans that drive long-term success."
+    challenge: "Crafting a comprehensive business strategy requires a cohesive vision that aligns every aspect of the organization. Many companies struggle to articulate this vision and translate it into actionable strategies. Without clear direction and execution frameworks, businesses risk losing focus and failing to adapt to market dynamics."
+    solution: "SLK Catalyst Partners provides a suite of frameworks designed to help businesses create and execute a cohesive strategic vision. We guide leaders in defining core values, setting ambitious goals, and developing comprehensive strategies that resonate across all levels of the organization. Our approach ensures that strategic planning is not just theoretical but is paired with practical, executable plans that drive long-term success."
     frameworks:
       - name: "Crafting Organizational Vision"
         description: "Guides leaders in defining a clear vision that serves as a strategic beacon for the organization."
@@ -35,12 +31,8 @@ framework-sections:
 
   - section: "Innovate out of stagnation"
     id: "innovation-growth-strategy"
-    challenges:
-      - title: "The Challenge"
-        description: "Many companies struggle to sustain momentum in innovation and growth and are often stuck in cycles of incremental changes rather than engaging in breakthrough innovations. Without structured frameworks, they miss opportunities in existing and new markets. The complexities of integrating new technologies and aligning with customer needs further impair their efforts."
-    solution:
-      - title: "The Solution"
-        description: "SLK Catalyst Partners offers structured frameworks to guide companies through the innovation and growth process. These frameworks help organizations enhance customer experiences, expand services, and adopt sustainable practices. Our tailored strategies ensure no valuable opportunities are overlooked."
+    challenge: "Many companies struggle to sustain momentum in innovation and growth and are often stuck in cycles of incremental changes rather than engaging in breakthrough innovations. Without structured frameworks, they miss opportunities in existing and new markets. The complexities of integrating new technologies and aligning with customer needs further impair their efforts."
+    solution: "SLK Catalyst Partners offers structured frameworks to guide companies through the innovation and growth process. These frameworks help organizations enhance customer experiences, expand services, and adopt sustainable practices. Our tailored strategies ensure no valuable opportunities are overlooked."
     frameworks:
       - name: "The Innovation Radar"
         description: "Identifies diverse innovation types to ensure no high-ROI opportunities are missed."
@@ -61,12 +53,8 @@ framework-sections:
 
   - section: "Untangle your inefficiencies"
     id: "efficiency-enhancement"
-    challenges:
-      - title: "The Challenge"
-        description: "Organizations often grapple with inefficiencies that stifle growth. These inefficiencies may arise from outdated processes, misaligned resources, or a lack of strategic focus. Without a systematic approach, such inefficiencies can drain resources and hamper growth opportunities."
-    solution:
-      - title: "The Solution"
-        description: "SLK Catalyst Partners offers a suite of frameworks specifically designed to identify and eliminate these inefficiencies. Our approach maximizes resource utilization and eliminates non-value-adding activities, helping businesses streamline their operations and better align them with strategic goals."
+    challenge: "Organizations often grapple with inefficiencies that stifle growth. These inefficiencies may arise from outdated processes, misaligned resources, or a lack of strategic focus. Without a systematic approach, such inefficiencies can drain resources and hamper growth opportunities."
+    solution: "SLK Catalyst Partners offers a suite of frameworks specifically designed to identify and eliminate these inefficiencies. Our approach maximizes resource utilization and eliminates non-value-adding activities, helping businesses streamline their operations and better align them with strategic goals."
     frameworks:
       - name: "Constrained Innovation"
         description: "Focuses on innovating within existing constraints to create a leaner organization."
@@ -74,15 +62,10 @@ framework-sections:
         description: "Guides managers through stopping non-essential activities, changing outdated methods, and starting new initiatives to enhance efficiency."
       - name: "Employee Experience Management Toolkit (EEMT)"
         description: "Enhances efficiency by creating exceptional employee experiences, improving engagement and productivity through innovative management practices."
-
   - section: "Comprehend your market"
     id: "market-based-strategy"
-    challenges:
-      - title: "The Problem"
-        description: "In a competitive marketplace, companies often struggle to differentiate themselves and connect with their target audience. Ongoing adjustments to segmentation, targeting, and positioning strategies are necessary to maintain relevance. Without a deep understanding of market dynamics, businesses risk inefficient marketing efforts and missed opportunities."
-    solution:
-      - title: "The Solution"
-        description: "SLK Catalyst Partners offers frameworks to guide managers through market segmentation, customer analysis, strategic positioning, and competitive management. These approaches ensure that marketing initiatives are effective and aligned with overall business goals, resulting in stronger market presence and sustainable growth."
+    challenge: "In a competitive marketplace, companies often struggle to differentiate themselves and connect with their target audience. Ongoing adjustments to segmentation, targeting, and positioning strategies are necessary to maintain relevance. Without a deep understanding of market dynamics, businesses risk inefficient marketing efforts and missed opportunities."
+    solution: "SLK Catalyst Partners offers frameworks to guide managers through market segmentation, customer analysis, strategic positioning, and competitive management. These approaches ensure that marketing initiatives are effective and aligned with overall business goals, resulting in stronger market presence and sustainable growth."
     frameworks:
       - name: "Managing the Big Picture of the Marketplace"
         description: "Provides a comprehensive approach to market dynamics and strategy development."
@@ -94,15 +77,10 @@ framework-sections:
         description: "Enhances salesforce performance through effective metrics and compensation plans."
       - name: "Managing the Competition"
         description: "Equips companies with strategies to manage competition and strengthen market position."
-
   - section: "Harness technology for advantages"
     id: "technology-strategy"
-    challenges:
-      - title: "The Problem"
-        description: "Many companies struggle to integrate technology into their strategy, missing opportunities to leverage it for competitive advantage. Without a clear approach, they risk inefficiencies, missed growth opportunities, and diminished market relevance."
-    solution:
-      - title: "The Solution"
-        description: "We offer frameworks to guide managers in aligning technology with market strategy, adopting a proactive vision for technology, and leveraging digital tools to enhance operations. This ensures technology becomes a central driver of sustained growth and profitability."
+    challenge: "Many companies struggle to integrate technology into their strategy, missing opportunities to leverage it for competitive advantage. Without a clear approach, they risk inefficiencies, missed growth opportunities, and diminished market relevance."
+    solution: "We offer frameworks to guide managers in aligning technology with market strategy, adopting a proactive vision for technology, and leveraging digital tools to enhance operations. This ensures technology becomes a central driver of sustained growth and profitability."
     frameworks:
       - name: "Integrating Technology into Market Strategy"
         description: "Aligns technology with key market strategy elements."
