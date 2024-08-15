@@ -100,4 +100,5 @@ framework-sections:
         description: "Aligns digital marketing efforts with overall business strategy."
       - name: "Integrating AI into Strategy Development"
         description: "Enhances strategic decision-making with AI integration."
+approach-title: How we work        
 ---
