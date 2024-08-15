@@ -22,21 +22,32 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
-
 // Scroll to portion
 document.addEventListener("DOMContentLoaded", function() {
-    const offset = 140; // Adjust this value to the height of your fixed header or desired offset
-  
+    // Define offsets for mobile and other breakpoints
+    const mobileOffset = 80; // Adjust this value for mobile devices
+    const defaultOffset = 120; // Adjust this value for larger screens
+    
+    // Function to determine the offset based on screen width
+    function getOffset() {
+        if (window.innerWidth <= 768) { // Assuming 768px as the mobile breakpoint
+            return mobileOffset;
+        } else {
+            return defaultOffset;
+        }
+    }
+
     function scrollWithOffset(targetElement) {
+        const offset = getOffset();
         const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
         const offsetPosition = elementPosition - offset;
-  
+
         window.scrollTo({
             top: offsetPosition,
             behavior: "smooth"
         });
     }
-  
+
     // Check if there's an anchor in the URL
     const anchor = window.location.hash;
     if (anchor) {
@@ -45,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             scrollWithOffset(targetElement);
         }
     }
-  
+
     // Add event listeners for links that should scroll with offset
     const links = document.querySelectorAll('a[href*="#"]');
     links.forEach(link => {
@@ -62,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
   
   
 // New Script Integration
