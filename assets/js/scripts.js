@@ -21,14 +21,11 @@ function handleScroll() {
     });
 }
 
-window.addEventListener('scroll', handleScroll);
-// Scroll to portion
+// Existing Code for Scroll Behavior
 document.addEventListener("DOMContentLoaded", function() {
-    // Define offsets for mobile and other breakpoints
     const mobileOffset = 80; // Adjust this value for mobile devices
-    const defaultOffset = 240; // Adjust this value for larger screens
-    
-    // Function to determine the offset based on screen width
+    const defaultOffset = 280; // Adjust this value for larger screens
+
     function getOffset() {
         if (window.innerWidth <= 768) { // Assuming 768px as the mobile breakpoint
             return mobileOffset;
@@ -48,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Check if there's an anchor in the URL
     const anchor = window.location.hash;
     if (anchor) {
         const targetElement = document.querySelector(anchor);
@@ -57,11 +53,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Add event listeners for links that should scroll with offset
     const links = document.querySelectorAll('a[href*="#"]');
     links.forEach(link => {
         link.addEventListener("click", function(event) {
-            // Check if the link is pointing to an anchor on the same page
             if (this.pathname === window.location.pathname) {
                 event.preventDefault();
                 const targetId = this.getAttribute("href").substring(this.getAttribute("href").indexOf("#"));
@@ -72,9 +66,61 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-});
 
-  
+    // New Code for Floating Arrows
+    const scrollUpBtn = document.getElementById('scroll-up');
+    const scrollDownBtn = document.getElementById('scroll-down');
+    const links = Array.from(document.querySelectorAll('.scroll-link'));
+
+    function updateButtonVisibility() {
+        const scrollPosition = window.scrollY;
+        const viewportHeight = window.innerHeight;
+
+        // Check if we are past the first section
+        const firstSectionTop = links[0].offsetTop;
+        scrollUpBtn.style.display = scrollPosition > firstSectionTop ? 'block' : 'none';
+
+        // Check if we are before the last section
+        const lastSectionBottom = links[links.length - 1].offsetTop + links[links.length - 1].offsetHeight;
+        scrollDownBtn.style.display = scrollPosition + viewportHeight < lastSectionBottom ? 'block' : 'none';
+    }
+
+    function scrollToSection(direction) {
+        const scrollPosition = window.scrollY;
+        const viewportHeight = window.innerHeight;
+        const sections = links;
+
+        for (let i = 0; i < sections.length; i++) {
+            const section = sections[i];
+            const sectionTop = section.offsetTop;
+            const sectionBottom = sectionTop + section.offsetHeight;
+
+            if (direction === 'up' && scrollPosition > sectionTop) {
+                window.scrollTo({
+                    top: Math.max(sectionTop - getOffset(), 0),
+                    behavior: 'smooth'
+                });
+                break;
+            } else if (direction === 'down' && scrollPosition + viewportHeight < sectionBottom) {
+                window.scrollTo({
+                    top: Math.min(sectionBottom - viewportHeight + getOffset(), document.body.scrollHeight),
+                    behavior: 'smooth'
+                });
+                break;
+            }
+        }
+    }
+
+    // Initial visibility update
+    updateButtonVisibility();
+
+    // Update button visibility on scroll
+    window.addEventListener('scroll', updateButtonVisibility);
+
+    // Add click event listeners
+    scrollUpBtn.addEventListener('click', () => scrollToSection('up'));
+    scrollDownBtn.addEventListener('click', () => scrollToSection('down'));
+});  
   
 // New Script Integration
 document.addEventListener('DOMContentLoaded', function() {
