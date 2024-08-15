@@ -70,25 +70,24 @@ document.addEventListener("DOMContentLoaded", function() {
     // New Code for Floating Arrows
     const scrollUpBtn = document.getElementById('scroll-up');
     const scrollDownBtn = document.getElementById('scroll-down');
-    const links = Array.from(document.querySelectorAll('.scroll-link'));
+    const sections = Array.from(document.querySelectorAll('.scroll-section'));
 
     function updateButtonVisibility() {
         const scrollPosition = window.scrollY;
         const viewportHeight = window.innerHeight;
 
         // Check if we are past the first section
-        const firstSectionTop = links[0].offsetTop;
+        const firstSectionTop = sections[0].offsetTop;
         scrollUpBtn.style.display = scrollPosition > firstSectionTop ? 'block' : 'none';
 
         // Check if we are before the last section
-        const lastSectionBottom = links[links.length - 1].offsetTop + links[links.length - 1].offsetHeight;
+        const lastSectionBottom = sections[sections.length - 1].offsetTop + sections[sections.length - 1].offsetHeight;
         scrollDownBtn.style.display = scrollPosition + viewportHeight < lastSectionBottom ? 'block' : 'none';
     }
 
     function scrollToSection(direction) {
         const scrollPosition = window.scrollY;
         const viewportHeight = window.innerHeight;
-        const sections = links;
 
         for (let i = 0; i < sections.length; i++) {
             const section = sections[i];
@@ -111,16 +110,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Initial visibility update
-    updateButtonVisibility();
+    scrollUpBtn.addEventListener('click', () => scrollToSection('up'));
+    scrollDownBtn.addEventListener('click', () => scrollToSection('down'));
 
     // Update button visibility on scroll
     window.addEventListener('scroll', updateButtonVisibility);
 
-    // Add click event listeners
-    scrollUpBtn.addEventListener('click', () => scrollToSection('up'));
-    scrollDownBtn.addEventListener('click', () => scrollToSection('down'));
-});  
+    // Initial visibility check
+    updateButtonVisibility();
+});
   
 // New Script Integration
 document.addEventListener('DOMContentLoaded', function() {
