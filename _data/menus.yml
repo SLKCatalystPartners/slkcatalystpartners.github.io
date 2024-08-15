@@ -1,19 +1,19 @@
 main:
   - name: "Corporates & Operating Entities"
-    url: "/corporate-and-operating-entities/"
+    url: "/corporate-and-operating-entities"
     weight: 1
     submenu-data: "frameworks"
     submenu: "frameworks"
   - name: "PE Sponsors"
-    url: "/private-equity-sponsors/"
+    url: "/private-equity-sponsors"
     weight: 2   
     submenu-data: "pe" 
     submenu: "expertise"
   - name: "About"
-    url: "/about/"
+    url: "/about"
     weight: 3
   - name: "Contact"
-    url: "/contact/"
+    url: "/contact"
     weight: 4 
 
 footer:
@@ -23,7 +23,7 @@ footer:
     submenu-data: "frameworks"
     submenu: "frameworks"
   - name: "Private Equity Practice"
-    url: "/private-equity-practice/"
+    url: "/private-equity-practice"
     weight: 2   
     submenu-data: "pe" 
     submenu: "expertise"
@@ -36,7 +36,7 @@ footer:
 
 sub-footer:
   - name: "Privacy Policy"
-    url: "/privacy-olicy/"
+    url: "/privacy-olicy"
     weight: 1
   - name: "Terms of Use"
     url: "/terms-of-use/"
