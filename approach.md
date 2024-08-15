@@ -11,7 +11,7 @@ hook-block:
   - "Our mission is to elevate our clients' capabilities, guiding them through obstacles to achieve outcomes aligned with their strategic goals."
 
 framework-sections:
-  - section: "Establish your business strategy"
+  - section: "Establish your overall vision"
     id: "overall-business-strategy"
     challenge: "Crafting a comprehensive business strategy requires a cohesive vision that aligns every aspect of the organization. Many companies struggle to articulate this vision and translate it into actionable strategies. Without clear direction and execution frameworks, businesses risk losing focus and failing to adapt to market dynamics."
     solution: "SLK Catalyst Partners provides a suite of frameworks designed to help businesses create and execute a cohesive strategic vision. We guide leaders in defining core values, setting ambitious goals, and developing comprehensive strategies that resonate across all levels of the organization. Our approach ensures that strategic planning is not just theoretical but is paired with practical, executable plans that drive long-term success."
@@ -77,7 +77,7 @@ framework-sections:
         description: "Enhances salesforce performance through effective metrics and compensation plans."
       - name: "Managing the Competition"
         description: "Equips companies with strategies to manage competition and strengthen market position."
-  - section: "Harness technology for advantages"
+  - section: "Harness tech for advantages"
     id: "technology-strategy"
     challenge: "Many companies struggle to integrate technology into their strategy, missing opportunities to leverage it for competitive advantage. Without a clear approach, they risk inefficiencies, missed growth opportunities, and diminished market relevance."
     solution: "We offer frameworks to guide managers in aligning technology with market strategy, adopting a proactive vision for technology, and leveraging digital tools to enhance operations. This ensures technology becomes a central driver of sustained growth and profitability."

@@ -1,5 +1,5 @@
 frameworks:
-  - name: "Establish your strategic vision"
+  - name: "Establish your overall vision"
     description: "Align your organization with a clear, actionable strategic direction"
     url: "/approach#overall-business-strategy"
     weight: 1
@@ -7,7 +7,7 @@ frameworks:
     description: "Streamline operations for maximum efficiency and productivity"
     url: "/approach#efficiency-enhancement"
     weight: 2
-  - name: "Innovate out of stagnation "
+  - name: "Innovate out of stagnation"
     description: "Ignite growth with fresh, breakthrough innovations"
     url: "/approach#innovation-strategy"
     weight: 3    
@@ -15,7 +15,7 @@ frameworks:
     description: "Gain deep market insights to sharpen your competitive edge"
     url: "/approach#market-based-strategy"
     weight: 4
-  - name: "Harness technology for advantages "
+  - name: "Harness tech for advantages"
     description: "Leverage technology to transform and elevate your business"
     url: "/approach#technology-strategy"
     weight: 5
