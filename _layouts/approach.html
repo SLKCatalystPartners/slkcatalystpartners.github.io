@@ -49,7 +49,7 @@ bodyClass: "approach"
         <div class="row justify-content-start">
             <div class="col-12 col-md-6">
                 <h3 class="small-upper">The Business Challenge</h3>
-                <p>{{ section.challenge }}</p>
+                <p class="large">{{ section.challenge }}</p>
             </div>
             <div class="col-12 col-md-6">
                 <h3 class="small-upper">Our Solution</h3>
@@ -63,12 +63,13 @@ bodyClass: "approach"
             </div>
         </div>
         <div class="row justify-content-center frameworks">
-            <div class="col-12">
-                <ul>
-                    {% for framework in section.frameworks %}
-                    <li><strong>{{ framework.name }}</strong>: {{ framework.description }}</li>
-                    {% endfor %}
-                </ul>
+            <div class="row"></div>
+                {% for framework in section.frameworks %}
+                <div class="col-6 col-md-4 col-lg-3">
+                <p class="large"><strong>{{ framework.name }}</strong></p>
+                <p>{{ framework.description }}</p>
+                </div>
+                {% endfor %}
             </div>
         </div>
         <hr />
