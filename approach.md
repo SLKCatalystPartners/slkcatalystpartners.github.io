@@ -30,7 +30,7 @@ framework-sections:
         description: "Equips leaders to drive and manage change effectively within their organizations."
 
   - section: "Innovate out of stagnation"
-    id: "innovation-growth-strategy"
+    id: "innovation-strategy"
     challenge: "Many companies struggle to sustain momentum in innovation and growth and are often stuck in cycles of incremental changes rather than engaging in breakthrough innovations. Without structured frameworks, they miss opportunities in existing and new markets. The complexities of integrating new technologies and aligning with customer needs further impair their efforts."
     solution: "SLK Catalyst Partners offers structured frameworks to guide companies through the innovation and growth process. These frameworks help organizations enhance customer experiences, expand services, and adopt sustainable practices. Our tailored strategies ensure no valuable opportunities are overlooked."
     frameworks:
