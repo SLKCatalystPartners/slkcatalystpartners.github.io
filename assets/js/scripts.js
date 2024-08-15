@@ -21,73 +21,43 @@ function handleScroll() {
     });
 }
 
-// Existing Code for Scroll Behavior
+window.addEventListener('scroll', handleScroll);
+
 document.addEventListener("DOMContentLoaded", function() {
     const mobileOffset = 80; // Adjust this value for mobile devices
     const defaultOffset = 280; // Adjust this value for larger screens
 
+    // Function to determine the offset based on screen width
     function getOffset() {
-        if (window.innerWidth <= 768) { // Assuming 768px as the mobile breakpoint
-            return mobileOffset;
-        } else {
-            return defaultOffset;
-        }
+        return window.innerWidth <= 768 ? mobileOffset : defaultOffset;
     }
 
-    function scrollWithOffset(targetElement) {
-        const offset = getOffset();
-        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - offset;
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-        });
-    }
-
-    const anchor = window.location.hash;
-    if (anchor) {
-        const targetElement = document.querySelector(anchor);
-        if (targetElement) {
-            scrollWithOffset(targetElement);
-        }
-    }
-
-    const links = document.querySelectorAll('a[href*="#"]');
-    links.forEach(link => {
-        link.addEventListener("click", function(event) {
-            if (this.pathname === window.location.pathname) {
-                event.preventDefault();
-                const targetId = this.getAttribute("href").substring(this.getAttribute("href").indexOf("#"));
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    scrollWithOffset(targetElement);
-                }
-            }
-        });
-    });
-
-    // New Code for Floating Arrows
+    // Get the floating arrow buttons
     const scrollUpBtn = document.getElementById('scroll-up');
     const scrollDownBtn = document.getElementById('scroll-down');
+
+    // Select all sections to scroll between
     const sections = Array.from(document.querySelectorAll('.scroll-section'));
 
+    // Function to update button visibility based on scroll position
     function updateButtonVisibility() {
         const scrollPosition = window.scrollY;
         const viewportHeight = window.innerHeight;
 
-        // Check if we are past the first section
+        // Check if the scroll position is past the first section
         const firstSectionTop = sections[0].offsetTop;
         scrollUpBtn.style.display = scrollPosition > firstSectionTop ? 'block' : 'none';
 
-        // Check if we are before the last section
+        // Check if the scroll position is before the last section
         const lastSectionBottom = sections[sections.length - 1].offsetTop + sections[sections.length - 1].offsetHeight;
         scrollDownBtn.style.display = scrollPosition + viewportHeight < lastSectionBottom ? 'block' : 'none';
     }
 
+    // Function to scroll to the next or previous section
     function scrollToSection(direction) {
         const scrollPosition = window.scrollY;
         const viewportHeight = window.innerHeight;
+        const offset = getOffset();
 
         for (let i = 0; i < sections.length; i++) {
             const section = sections[i];
@@ -96,13 +66,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (direction === 'up' && scrollPosition > sectionTop) {
                 window.scrollTo({
-                    top: Math.max(sectionTop - getOffset(), 0),
+                    top: Math.max(sectionTop - offset, 0),
                     behavior: 'smooth'
                 });
                 break;
             } else if (direction === 'down' && scrollPosition + viewportHeight < sectionBottom) {
                 window.scrollTo({
-                    top: Math.min(sectionBottom - viewportHeight + getOffset(), document.body.scrollHeight),
+                    top: Math.min(sectionBottom - viewportHeight + offset, document.body.scrollHeight),
                     behavior: 'smooth'
                 });
                 break;
@@ -110,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    // Attach event listeners to the floating arrows
     scrollUpBtn.addEventListener('click', () => scrollToSection('up'));
     scrollDownBtn.addEventListener('click', () => scrollToSection('down'));
 
@@ -119,6 +90,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initial visibility check
     updateButtonVisibility();
 });
+
+  
   
 // New Script Integration
 document.addEventListener('DOMContentLoaded', function() {
