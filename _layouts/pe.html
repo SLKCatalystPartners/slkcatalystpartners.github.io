@@ -20,11 +20,11 @@ bodyClass: "practice"
         </div>
     </div>
 </div>
-<div class="strip-secondary intro-block">
+<div id="overview" class="strip-secondary intro-block">
     <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
         <div class="row justify-content-start">
             <div class="col-12">
-                <h2 id="overview" class="scroll-section small-upper text-center">{{ page.intro-block-header }}</h2>
+                <h2 class="scroll-section small-upper text-center">{{ page.intro-block-header }}</h2>
             </div>
         </div>
         <hr/>
@@ -48,10 +48,10 @@ bodyClass: "practice"
 
 
 {% for section in page.sections %}
-<div class="section-header">
+<div id="{{ section.id | replace: ' ', '-' }}" class="section-header">
     <div class="container pt-10">
         <div class="row justify-content-start">
-            <h2 id="{{ section.id | replace: ' ', '-' }}" class="h3 scroll-section">{{ section.section }}</h2>
+            <h2 class="h3 scroll-section">{{ section.section }}</h2>
         </div>
     </div>
 </div>
@@ -100,11 +100,11 @@ bodyClass: "practice"
 </div>
 {% endfor %}
 
-<div class="strip-grey how-we-work">
+<div id="how-we-work" class="strip-grey how-we-work">
     <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
         <div class="row justify-content-start">
             <div class="col-12">
-                <h2 id="how-we-work" class="scroll-section small-upper text-center">{{ page.workprocess-title }}</h2>
+                <h2 class="scroll-section small-upper text-center">{{ page.workprocess-title }}</h2>
             </div>
         </div>
         {% for item in page.workprocess %}
