@@ -1,19 +1,3 @@
-// Helper function to debounce scroll events
-function debounce(func, wait = 10, immediate = true) {
-    let timeout;
-    return function() {
-        const context = this, args = arguments;
-        const later = function() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        const callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-}
-
 // Existing Code
 var body = document.querySelector('body');
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
@@ -37,47 +21,47 @@ function handleScroll() {
     });
 }
 
-window.addEventListener('scroll', debounce(handleScroll));
+window.addEventListener('scroll', handleScroll);
 
-// scroll to portion
+// Scroll to portion
 document.addEventListener("DOMContentLoaded", function() {
     const offset = 140; // Adjust this value to the height of your fixed header or desired offset
   
     function scrollWithOffset(targetElement) {
-      const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - offset;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
   
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
     }
   
     // Check if there's an anchor in the URL
     const anchor = window.location.hash;
     if (anchor) {
-      const targetElement = document.querySelector(anchor);
-      if (targetElement) {
-        scrollWithOffset(targetElement);
-      }
+        const targetElement = document.querySelector(anchor);
+        if (targetElement) {
+            scrollWithOffset(targetElement);
+        }
     }
   
     // Add event listeners for links that should scroll with offset
     const links = document.querySelectorAll('a[href*="#"]');
     links.forEach(link => {
-      link.addEventListener("click", function(event) {
-        // Check if the link is pointing to an anchor on the same page
-        if (this.pathname === window.location.pathname) {
-          event.preventDefault();
-          const targetId = this.getAttribute("href").substring(this.getAttribute("href").indexOf("#"));
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            scrollWithOffset(targetElement);
-          }
-        }
-      });
+        link.addEventListener("click", function(event) {
+            // Check if the link is pointing to an anchor on the same page
+            if (this.pathname === window.location.pathname) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(this.getAttribute("href").indexOf("#"));
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    scrollWithOffset(targetElement);
+                }
+            }
+        });
     });
-  });
+});
   
   
 // New Script Integration
