@@ -1,0 +1,26 @@
+
+.scroll-nav {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px;
+    display: none; /* Initially hidden */
+}
+
+#scroll-up {
+    top: 10px;
+    right: 10px;
+}
+
+#scroll-down {
+    bottom: 10px;
+    right: 10px;
+}
