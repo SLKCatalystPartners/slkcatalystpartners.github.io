@@ -25,7 +25,7 @@ window.addEventListener('scroll', handleScroll);
 
 document.addEventListener("DOMContentLoaded", function() {
     const mobileOffset = 80; // Adjust this value for mobile devices
-    const defaultOffset = 280; // Adjust this value for larger screens
+    const defaultOffset = 40; // Adjust this value for larger screens
 
     // Function to determine the offset based on screen width
     function getOffset() {
