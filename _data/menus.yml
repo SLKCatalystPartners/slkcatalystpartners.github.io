@@ -1,11 +1,11 @@
 main:
-  - name: "Approach"
-    url: "/approach/"
+  - name: "Corporates & Operating Entities"
+    url: "/corporate-and-operating-entities/"
     weight: 1
     submenu-data: "frameworks"
     submenu: "frameworks"
-  - name: "Private Equity Practice"
-    url: "/private-equity-practice/"
+  - name: "PE Sponsors"
+    url: "/private-equity-sponsors/"
     weight: 2   
     submenu-data: "pe" 
     submenu: "expertise"
@@ -30,6 +30,9 @@ footer:
   - name: "About"
     url: "/about/"
     weight: 3
+  - name: "SLKone"
+    url: "https://slkone.com"
+    weight: 4    
 
 sub-footer:
   - name: "Privacy Policy"
