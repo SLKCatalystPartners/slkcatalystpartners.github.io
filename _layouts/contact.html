@@ -6,11 +6,12 @@ bodyClass: "page-contact"
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
     <div class="row justify-content-start">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-4">
             <h1 class="title">{{page.title}}</h1>
             <p class="large">{{ page.contact-message}}</p>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-8">
+            <h2>Send us a Message</h2>
             <div id="contact-form">
                 <form method="POST" action="https://formspree.io/mnqbqrpg">
                     <div class="form-group">
@@ -34,19 +35,8 @@ bodyClass: "page-contact"
                     <textarea class="form-control" rows="6" name="message" placeholder="How can we partner with you?"></textarea>
                     </div>
                     <br/>
-                    <button type="submit" class="button btn btn-primary button-primary">Send</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
                 </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="strip">
-    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-        <hr/>
-        <div class="row justify-content-start">
-            <div class="col-12">
-                <h4>{{ page.final-message }}</h4>
             </div>
         </div>
     </div>
