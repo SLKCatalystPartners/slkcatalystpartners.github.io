@@ -95,16 +95,13 @@
 .section-header {
   background: $white;
   position: sticky;
-  top: 60px; /* Adjust to create space below the header */
-  z-index: 900; /* Lower z-index than the main header */
-
+  top: -20px;
+  z-index: 90;
   @include media-breakpoint-up(md) {
-    top: 70px; /* Adjust for larger screens */
+    top: 10px;
   }
-
   h2 {
     margin-bottom: $grid-gutter-width / 2;
-
     @include media-breakpoint-up(md) {
       margin-bottom: $grid-gutter-width;
     }
