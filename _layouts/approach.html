@@ -63,17 +63,15 @@ bodyClass: "approach"
             </div>
         </div>
         <div class="row justify-content-center frameworks">
-            <div class="row"></div>
-                {% for framework in section.frameworks %}
-                <div class="col-6 col-md-4 col-lg-3">
+            {% for framework in section.frameworks %}
+            <div class="col-6 col-md-4 col-lg-3">
                 <p class="large"><strong>{{ framework.name }}</strong></p>
                 <p>{{ framework.description }}</p>
-                </div>
-                {% endfor %}
             </div>
-        </div>
+            {% endfor %}
+        </div> <!-- close row justify-content-center frameworks -->
         <hr />
-    </div>
-</div>
+    </div> <!-- close container pb-10 -->
+</div> <!-- close strip Domain -->
 {% endfor %}
 {% include block-approach.html %}
