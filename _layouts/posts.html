@@ -3,24 +3,24 @@ layout: default
 bodyClass: "page-posts"
 ---
 
-<div class="intro container pb-6 pt-6 pt-md-10">
+<div class="intro container pb-2 pt-6 pt-md-10">
     <div class="row justify-content-start">
         <div class="col-12 text-center">
             <h1 class="title">Articles from the SLK Catalyst Partners</h1>
         </div>
     </div>
 </div>
-<div class="container pt-6 pb-6 pb-md-10">
-    <div class="row">
-        {% for post in site.posts %}
+<div class="container pt-2 pb-6 pb-md-10">
+    {% for post in site.posts %}
+    <div id="{{ post.id }}" class="row pb-2">
         <hr/>
-        <div class="col-md-4" style="background-image: url({{ post.background }}); border-radius: 8px; background-size: cover;"></div>
+        <div class="col-md-4" style="background-image: url({{ post.background }}); border-radius: 8px; background-size: cover;" onclick="location.href='{{ post.url }}';"></div>
         <div class="col-md-8">
             <a href="{{ post.url }}""><h2>{{ post.title }}</h2></a>
             <p class="large">{{ post.subtitle }}</p>
             <p>{{ post.description }}</p>
             <a class="large arrow" href="{{ post.url }}">Read More</a>
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
 </div>
