@@ -61,3 +61,16 @@ ol {
   font-weight: bold;
   margin-bottom: 2.5em;
 }
+
+.post {
+  ul, ol {
+    margin-left: 1em;
+    line-height: 26px;
+    color: $steel;
+    font-family: $font-family-base;
+    margin-bottom: 20px;
+   li {
+    margin-bottom: 8px;
+   }
+  }
+}
