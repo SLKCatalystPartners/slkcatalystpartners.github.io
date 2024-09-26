@@ -17,6 +17,11 @@ home:
   limit_domains: 6
 
 collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/
+    sort_by: date
+    categories: posts
   domains:
     output: true
     sort_by: weight
@@ -25,6 +30,11 @@ collections:
     sort_by: weight
 
 defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
   - scope:
       path: ""
       type: "domain"
