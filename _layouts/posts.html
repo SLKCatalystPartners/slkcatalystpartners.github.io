@@ -10,14 +10,12 @@ bodyClass: "page-posts"
         </div>
     </div>
 </div>
-<div class="strip strip-bg-only" style="background-image: url({{ post.background | relative_url }})"></div>
-</div>
 <div class="container pt-6 pb-6">
     <div class="row">
         <hr/>
         {% for post in site.posts %}
         <div class="col-md-4">
-            <a href="{{post.url}}"><img src="{{ post.background }}" alt="{{ post.title }}"></a>"
+            <a href="{{ post.url }}"><img src="{{ post.background }}" alt="{{ post.title }}"></a>"
         </div>
         <div class="col-md-8">
             <h3 class="small-upper">{{ post.title }}</h3>
