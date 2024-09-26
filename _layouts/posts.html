@@ -12,15 +12,15 @@ bodyClass: "page-posts"
 </div>
 <div class="container pt-2 pb-6 pb-md-10">
     {% for post in site.posts %}
-    <div id="{{ post.id }}" class="row pb-2">
+    <div id="{{ post.id }}" class="row pb-2"  onclick="location.href='{{ post.url }}';">
         <hr/>
-        <div class="col-md-4" style="background-image: url({{ post.background }}); border-radius: 8px; background-size: cover;" onclick="location.href='{{ post.url }}';"></div>
         <div class="col-md-8">
-            <a href="{{ post.url }}""><h3>{{ post.title }}</h3></a>
+            <h3>{{ post.title }}</h3>
             <p class="large">{{ post.subtitle }}</p>
             <p>{{ post.description }}</p>
             <a class="large arrow" href="{{ post.url }}">Read More</a>
         </div>
+        <div class="col-md-4" style="background-image: url({{ post.background }}); border-radius: 8px; background-size: cover;"></div>
     </div>
     {% endfor %}
 </div>
