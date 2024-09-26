@@ -12,9 +12,12 @@ main:
   - name: "About"
     url: "/about"
     weight: 3
+  - name: "Articles"
+    url: "/posts"
+    weight: 4
   - name: "Contact"
     url: "/contact"
-    weight: 4 
+    weight: 5
 
 footer:
   - name: "Approach"
@@ -30,9 +33,12 @@ footer:
   - name: "About"
     url: "/about/"
     weight: 3
+  - name: "Articles"
+    url: "/posts"
+    weight: 4
   - name: "SLKone"
     url: "https://slkone.com"
-    weight: 4    
+    weight: 5
 
 sub-footer:
   - name: "Privacy Policy"
