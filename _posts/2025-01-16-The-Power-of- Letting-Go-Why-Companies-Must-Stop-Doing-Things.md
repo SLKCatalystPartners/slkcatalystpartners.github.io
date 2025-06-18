@@ -4,7 +4,7 @@ title: "The-Power-of-Letting-Go-Why-Companies-Must-Stop-Doing-Things-And-How"
 subtitle: "Strategies to Eliminate the Unnecessary and Unlock Organizational Potential"
 date: 2025-01-17
 description: "How businesses can eliminate inefficiencies and redirect resources toward initiatives that drive real value and growth."
-background: "/images/posts/Why-companies-must-stop-doing-things.webp"
+background: "/images/posts/Why-Companies-Must-Stop-Doing-Things.webp"
 ---
 
 The typical company is constantly churning out ideas for new products, markets, and processes. As a result, the typical manager’s life is cluttered and complicated. Many managers and leaders are now spending more time fighting the daily fires than in work and ideation that truly add value and drive positive organizational outcomes.  
