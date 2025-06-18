@@ -15,7 +15,7 @@ Services now comprise more than 70 percent of the U.S. economy. But many compani
 This product-focused model is dominant across industries ranging from elevators and locomotives to air compressors and industrial paints. Unfortunately, this product-focused model has many drawbacks. Companies often don’t sufficiently evaluate these drawbacks. Some of the drawbacks lurk just over the horizon, invisible to managers who don’t take the explicit effort to ferret them out. But there is an alternative model every product company should consider—servicization.  
 
  
-**Defining servicization 
+###Defining servicization 
 
  
 Servicization is the design of product-as-a-service business models which aim to maximize company profits by using the product as a component in a broader and scalable service-intensive solution that resolves customers’ problems. 
@@ -27,7 +27,7 @@ This definition packs in a lot. A real-life example is the best way to unpack it
 A group of us once visited the factory of a leading company that made outdoor terrain-management equipment. On one factory floor, we noticed that the equipment they manufactured, close to its final production state, was being transported by overhead conveyors through what was literally a hole-in-the-wall into an adjacent manufacturing space. On probing further, the managers informed us that the destination was an adjacent painting shop that was run by the paint supplier. The freshly painted equipment was returned to the customer through a different hole-in-the-wall, after which it was subject to some final touches and prepared for delivery. Thus, rather than supplying drums of paint, servicization involves painting the product for the customer as a service.  
  
 
-**The benefits of servicization for the supplier 
+###The benefits of servicization for the supplier 
 
  
 The product-focused model is dominant across an array of industries, and it has many drawbacks that servicization can address.  
@@ -42,7 +42,7 @@ Second, with the product model, suppliers often lose the parts and services busi
 Finally, when the time comes to replace the product, the supplier is back at square one, engaging in intense price wars with numerous “me-too” competitors to regain the customer’s business. This shrinks profits. In contrast, with servicization, the supplier is embedded in the operations of the customer, leading to stable relationships. 
 
  
-**The benefits of servicization for the customer 
+###The benefits of servicization for the customer 
 
  
 It is tempting to think that servicization benefits the supplier even while hurting the customer. In contrast, when implemented well, servicization offers significant benefits to the customer as well.  
@@ -60,7 +60,7 @@ Third, servicization aligns incentives to the benefit of the customer. Assume th
 While servicization is not the perfect answer in every situation, it offers a range of benefits to both supplier and customers. At the least, every company must consider it seriously.  
 
  
-**How to embrace servicization 
+###How to embrace servicization 
 
 
 Servicization works best when both supplier and customer converge in the middle. This requires that both suppliers and customers make some changes.  
