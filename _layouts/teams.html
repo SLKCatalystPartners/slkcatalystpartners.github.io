@@ -45,7 +45,7 @@ bodyClass: "page-teams"
                     <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
                     {% endif %}
                 </div>
-                <div class="team-content">{{ team.excerpt | truncate: 120 }}</div>
+                <div class="team-content">{{ team.excerpt | truncate: 240 }}</div>
                 <a class="large arrow text-center" href="{{ team.url | relative_url }}">Read Full Bio</a>
             </div>
         </div>
