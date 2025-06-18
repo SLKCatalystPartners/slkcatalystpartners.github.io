@@ -46,7 +46,7 @@ bodyClass: "page-teams"
                     {% endif %}
                 </div>
                 <div class="team-content">{{ team.excerpt | truncate: 120 }}</div>
-                <a class="large arrow" href="{{ team.url | relative_url }}">Read Full Bio</a>
+                <a class="large arrow text-center" href="{{ team.url | relative_url }}">Read Full Bio</a>
             </div>
         </div>
         {% endfor %}
