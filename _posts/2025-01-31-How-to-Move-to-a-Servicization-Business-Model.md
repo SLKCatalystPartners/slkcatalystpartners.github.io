@@ -4,7 +4,7 @@ title: "How-to-Move-to-a-Servicization-Business-Model"
 subtitle: "Turning products into scalable service-driven solutions—are gaining a competitive edge"
 date: 2025-01-31
 description: "How shifting from selling products to delivering value as a service can boost profitability, customer retention, and operational efficiency."
-background: "/images/posts/How-to-Move-to-a-Servicization-Business-Model.webp"
+background: "/images/posts/How-To-Move-To-A-Servicization-Business-Model.webp"
 ---
 
  
