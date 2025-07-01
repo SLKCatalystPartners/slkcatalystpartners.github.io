@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The-Power-of-Letting-Go-Why-Companies-Must-Stop-Doing-Things-And-How"
+title: "The Power of Letting Go Why Companies Must Stop Doing Things And How"
 subtitle: "Strategies to Eliminate the Unnecessary and Unlock Organizational Potential"
 date: 2025-01-17
 description: "How businesses can eliminate inefficiencies and redirect resources toward initiatives that drive real value and growth."
